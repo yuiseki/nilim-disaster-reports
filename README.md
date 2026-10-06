@@ -8,12 +8,12 @@
 `data/pdf/` 原本、`data/text/` pdftotext抽出、`data/indices/` 索引・共通規約。
 
 逐次1接続、512KiB/s、要求間3秒で取得。systemdユーザーサービス `nilim-disaster-reports-download.service` で49件を順次取得中。取得済み3標本はSHA256検証後に再利用。2026-10-07から35冊の国総研資料と109件の建築災害速報、計630 PDFを対象。旧49件の完了分は再利用。国総研の災害資料全体の網羅は未確認。
-共通規約は原則PDL1.0。共同著作・第三者の図表写真は要調査。HuggingFace未公開。
+共通規約は原則PDL1.0。共同著作・第三者の図表写真の確認結果は下記「Hugging Face公開（本文のみ）」と `data/hf/RIGHTS_REVIEW.tsv`。HuggingFace未公開（ドライランのみ）。
 詳細カード: /Workspaces/repos/__yuiseki/_research_ai/YuisekinText/docs/datasets/nilim-disaster-reports.md
 
 ## 運用
 
-Python標準ライブラリとcurlを使用。検証: `python -m pytest -q tests`（23件）。
+Python標準ライブラリとcurlを使用（HF公開用の結合・公開スクリプトはPyYAML、公開時のみhuggingface_hub）。検証: `python3 -m pytest -q tests`（82件）。
 進捗: `cat data/status.json`、ログ: `tail -n 10 data/download.log`。
 停止: `systemctl --user stop nilim-disaster-reports-download`。
 再開は下記の起動スクリプトを実行。ロックで二重起動を防ぎ、サイズ・SHA256が一致する完了ファイルをスキップ。
@@ -42,3 +42,48 @@ https://www.nilim.go.jp/lab/ucg/research/02.html
 取得済み629 PDFをページ別JSONLへ変換する処理を追加。原本SHA256・出典・報告名・資料番号・章名を保持し、資料と速報を2本へ結合する。手順と保存先は [docs/JSONL.md](docs/JSONL.md)。
 
 2026-10-07、629 PDFのJSONL化完了。14,125ページ・約44.6MiB、抽出エラー0件。結合済みJSONLは `data/jsonl/corpus/tnn.jsonl` と `data/jsonl/corpus/flash.jsonl`。
+
+## Hugging Face公開（本文のみ）
+
+2026-10-07、`yuiseki/nilim-disaster-reports`（HF）と `yuiseki/nilim-disaster-reports`（GitHub）として公開する準備を整えた。アップロード・pushはしていない（ドライランのみ）。
+
+判断：
+
+- 公開するのは抽出テキストだけ。PDF（629件・約3.6GiB）は公開せず手元に残す。各行の `source_url` と `source_pdf_sha256` で原本の入手と照合ができる。
+- 独自のParquetは作らない。HFがJSONLから自動でParquetに変換する。
+- `source_type` 別に2ファイルへ結合する。`tnn.jsonl`（国総研資料）と `flash.jsonl`（災害調査速報）。ファイル名はカードのconfig名にそろえた。
+- 各行は元のページJSONLの行をバイト単位でそのまま写す（再シリアライズしない）。文書は `data/catalog.tsv` の順、ページはPDF内の順。
+- カードは英語。ライセンスは `license: other`（`license_name: nilim-pdl1.0-and-co-publisher-notices`）。国総研の規約（https://www.nilim.go.jp/aboutlink.htm）はPDL1.0だが、共同刊行の報告は土研・建研等の©が奥付にあり、共同刊行機関の規約は確認していないため、全体をCC BY 4.0とは表示しない。規約の原文・取得日・SHA256は `data/hf/LICENSE`。
+
+権利確認（rights scan）：
+
+- 全629 PDFのページ本文から、著作権表示・転載禁止・共同著作・図表写真のクレジット・測量法や地理院地図の表示を探し、全報告の表紙・前付け・執筆者一覧・奥付を読んで、報告ごとに a（他の権利表示なし）・b（図表写真のクレジットのみ）・c（報告全体への権利表示・転載制限、または他機関との共同著作・共同刊行）・d（不明）に分類した。
+- 判断は `src/rights_scan.py` の `TNN`・`FLASH` に根拠の引用つきで書き、`python3 src/rights_scan.py` で `data/hf/RIGHTS_REVIEW.tsv`（1 PDF 1行）を作る。
+- 除外は `data/hf/EXCLUDE.txt`（1行1 `source_url`、`#` はコメント）で切り替える。現在は本文に「All rights reserved」と文書承認なしの転載・複製の禁止がある4報告（798 港空研共同、868・875 土研共同、1042 海上・港湾・航空技術研究所共同）の75 PDF・3,399ページを除外。その他のc（共同刊行）は残し、カードに明記した。
+
+手順（リポジトリルートで実行）：
+
+```sh
+python3 -m pytest -q tests
+python3 src/rights_scan.py          # data/hf/RIGHTS_REVIEW.tsv（EXCLUDE.txt を変えたら作り直す）
+python3 src/merge_jsonl.py merge    # data/hf/{tnn,flash}.jsonl, MANIFEST.json, provenance.yaml
+python3 src/merge_jsonl.py verify   # 除外以外の全ソース行が一度だけ・順序どおり・バイト一致で入り、除外行がなく、件数がdataset.jsonと一致
+python3 src/publish.py              # ドライラン：検証とアップロード対象の一覧
+python3 src/publish.py --push       # 公開（public）。実行はまだしていない
+```
+
+`merge` はJSONL段階の欠落が `source-missing.json` の1件（資料728の奥付、404）以外にある場合、抽出エラーがある場合、manifestに未完了の行がある場合、文書のSHA256がmanifestと違う場合、目録とmanifestの文書が食い違う場合、`EXCLUDE.txt` に未知・重複のURLがある場合、`RIGHTS_REVIEW.tsv` が全文書を覆わない場合は何も書かずに止まる。出力は `.part` に書いてから置き換える。
+`MANIFEST.json` と `provenance.yaml` は `merge` が毎回作り直す。`README.md`（HFのデータセットカード）と `LICENSE` は手書きで、件数や除外を変えたらカードも直す（テストが `MANIFEST.json` の数値・権利分類の件数・規約の引用とカードの一致を確認する）。
+`publish.py` は `data/hf` 直下の `README.md`・`LICENSE`・`provenance.yaml`・`MANIFEST.json`・`RIGHTS_REVIEW.tsv`・`EXCLUDE.txt`・`*.jsonl` だけを送る。それ以外のファイルやサブディレクトリ、PDF（拡張子または中身）、カードのconfigsとファイルの不一致、権利確認で支持されないライセンス（c・dを含むのに `cc-by-4.0`）、除外した報告を名指ししないカード、`MANIFEST.json` とのサイズ・SHA256の不一致があれば止まる。
+Git管理するのは `data/hf/` のうち上記6ファイルだけで、結合済み `*.jsonl` と他の `data/` は管理外。
+
+2026-10-07の結合結果：
+
+| 区分 | ファイル | PDF | ページ（行） | 文字数 | 空ページ | バイト |
+|---|---|---|---|---|---|---|
+| tnn | tnn.jsonl | 445 | 8,742 | 12,346,948 | 351 | 27,993,652 |
+| flash | flash.jsonl | 109 | 1,984 | 1,659,185 | 1 | 5,371,933 |
+| 計 | | 554 | 10,726 | 14,006,133 | 352 | 33,365,585 |
+| 除外 | | 75 | 3,399 | 9,002,626 | 0 | |
+
+権利分類（収録分）：a 14報告・23 PDF、b 14報告・44 PDF、c 102報告・426 PDF、d 10報告・61 PDF。除外はすべてc（4報告・75 PDF）。

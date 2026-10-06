@@ -1,0 +1,110 @@
+dataset: yuiseki/nilim-disaster-reports
+publisher_of_source: National Institute for Land and Infrastructure Management (NILIM), MLIT, Japan / 国土交通省 国土技術政策総合研究所
+series:
+  tnn:
+    title: '国総研資料 (Technical Note of NILIM): disaster survey reports'
+    index: https://www.nilim.go.jp/lab/bbg/saigai/TEC-FORCE.html
+    documents: 445
+    pages: 8742
+    file: tnn.jsonl
+  flash:
+    title: 災害調査速報 (quick field-survey reports and bulletins, mostly 建築災害速報)
+    index: https://www.nilim.go.jp/lab/bbg/saigai/index.html
+    documents: 109
+    pages: 1984
+    file: flash.jsonl
+catalog:
+  date: '2026-10-07'
+  file: catalog/catalog-20261007.tsv
+  source_indexes:
+  - https://www.nilim.go.jp/lab/bbg/saigai/TEC-FORCE.html
+  - https://www.nilim.go.jp/lab/bbg/saigai/index.html
+  - https://www.nilim.go.jp/lab/ucg/research/02.html
+  urls: 630
+  catalog_sha256: a84d7a7d4536f1df42f1feb3218db9b5c1a3c8f60b0f26b7ac240c4a196e1f4d
+  scope: 国総研資料 (Technical Note of NILIM) reports on disaster field surveys linked from the indexes, split PDFs including covers, front matter and colophons (whole-report PDFs skipped when split PDFs exist), plus every 建築災害速報/field-survey bulletin PDF on the disaster index page; reports 1320 and 1356 added by hand
+fetch:
+  documents: 629
+  bytes: 3856093936
+  first: '2026-10-06T10:27:48Z'
+  last: '2026-10-06T22:24:04Z'
+  missing:
+  - url: https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072824.pdf
+    http_status: 404
+    report_id: '728'
+    section: 奥付
+  method: one sequential HTTP GET per PDF URL listed in the catalog (512 KiB/s, 3 s between requests); size and SHA-256 recorded
+extraction:
+  tool: pdftotext -enc UTF-8 -layout (Poppler)
+  method: text layer of each PDF, split on form feed into pages; page count checked against pdfinfo
+  new_ocr: false
+  normalisation: none
+  extractor_versions:
+    pdftotext version 24.08.0: 3
+    pdftotext version 24.02.0: 626
+  schema_version: nilim-pages-jsonl-v1
+  jsonl_written_first: '2026-10-06T22:42:24Z'
+  jsonl_written_last: '2026-10-06T22:46:17Z'
+counts:
+  documents: 554
+  pages: 10726
+  characters: 14006133
+  empty_pages: 352
+excluded:
+  list: EXCLUDE.txt
+  documents: 75
+  pages: 3399
+  reports:
+  - tnn 1042
+  - tnn 798
+  - tnn 868
+  - tnn 875
+  reason: see RIGHTS_REVIEW.tsv and the card; the excluded PDFs carry a notice that forbids reproduction without written permission
+rights_review:
+  file: RIGHTS_REVIEW.tsv
+  classes:
+    a: no other rights notice found
+    b: figures/photos credited to others only
+    c: rights notice or reprint restriction for the whole report, or joint authorship with another organisation
+    d: unclear
+  summary:
+    included:
+      a:
+        reports: 14
+        pdfs: 23
+        pages: 313
+      b:
+        reports: 14
+        pdfs: 44
+        pages: 601
+      c:
+        reports: 102
+        pdfs: 426
+        pages: 9334
+      d:
+        reports: 10
+        pdfs: 61
+        pages: 478
+    excluded:
+      a:
+        reports: 0
+        pdfs: 0
+        pages: 0
+      b:
+        reports: 0
+        pdfs: 0
+        pages: 0
+      c:
+        reports: 4
+        pdfs: 75
+        pages: 3399
+      d:
+        reports: 0
+        pdfs: 0
+        pages: 0
+changes:
+- 'none to the text or to any field: every line is the per-PDF JSONL line copied byte for byte'
+- the per-PDF JSONL files were concatenated into one file per source type, documents in catalog order, pages in PDF order
+- the PDFs listed in EXCLUDE.txt were left out
+- the PDFs themselves are not included; source_url names the official PDF and source_pdf_sha256 identifies the copy that was read
+licence: 'other (NILIM site terms: PDL1.0 for NILIM content unless a rights notice says otherwise; co-published reports also carry rights notices of other institutes); see LICENSE'

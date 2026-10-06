@@ -1,0 +1,91 @@
+# PDFs left out of data/hf/{tnn,flash}.jsonl by src/merge_jsonl.py: one source_url per line.
+# Blank lines and lines starting with # are ignored. Remove a URL here to put the PDF back, then run
+# src/rights_scan.py and src/merge_jsonl.py merge again.
+#
+# Only reports whose own text carries an explicit "All rights reserved" notice that forbids reprinting
+# or copying any part without written approval are listed (rights class c in RIGHTS_REVIEW.tsv).
+# Such a notice is a 権利表記 in the sense of the NILIM site terms, so PDL1.0 does not apply by default.
+# Other class c reports (joint publications without such a notice) are kept; see the card.
+
+# 国総研資料 798 / 港湾空港技術研究所資料 1291 (43 PDFs). Colophon ks079843.pdf: "Copyright (C) (2015) by PARI. All rights reserved." and 本報告書の全部または一部の転載、複写は港湾空港技術研究所理事長の文書による承認を得ずしてこれを行ってはならない。
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079801.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079802.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079803.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079804.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079805.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079806.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079807.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079808.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079809.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079810.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079811.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079812.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079813.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079814.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079815.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079816.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079817.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079818.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079819.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079820.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079821.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079822.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079823.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079824.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079825.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079826.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079827.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079828.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079829.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079830.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079831.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079832.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079833.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079834.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079835.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079836.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079837.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079838.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079839.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079840.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079841.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079842.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079843.pdf
+
+# 国総研資料 868 / 土研資料 4307 (15 PDFs). Cover verso ks086801.pdf p2: "Copyright (C) (2015) by N.I.L.I.M. and P.W.R.I. All rights reserved." and 転載、複製は…文書による承認を得ずしてこれを行ってはならない。
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086803.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086801.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086802.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086804.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086805.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086806.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086807.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086808.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086809.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086810.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086811.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086812.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086813.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086814.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086815.pdf
+
+# 国総研資料 875 / 土研資料 4302 (16 PDFs). Cover verso ks087501.pdf p2: "Copyright (C) (2015) by N.I.L.I.M and P.W.R.I. All rights reserved." and 転載、複製は…文書による承認を得ずしてこれを行ってはならない。
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087501.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087502.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087503.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087504.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087505.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087506.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087507.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087508.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087509.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087510.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087511.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087512.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087513.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087514.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087515.pdf
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0875pdf/ks087516.pdf
+
+# 国総研資料 1042 / 港空研資料 1348 (1 PDF). Colophon ks1042.pdf p54: "Copyright (C) (2018) by MPAT. All rights reserved." and 転載、複写は海上・港湾・航空技術研究所理事長の文書による承認を得ずしてこれを行ってはならない。
+https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1042pdf/ks1042.pdf

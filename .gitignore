@@ -1,3 +1,15 @@
-data/
+# Data and logs stay out of Git, except the small Hugging Face card sources under data/hf/.
+# The merged *.jsonl (about 33 MB) are rebuilt by src/merge_jsonl.py and are not tracked.
+data/*
+!data/hf/
+data/hf/*
+!data/hf/README.md
+!data/hf/LICENSE
+!data/hf/provenance.yaml
+!data/hf/MANIFEST.json
+!data/hf/RIGHTS_REVIEW.tsv
+!data/hf/EXCLUDE.txt
 __pycache__/
+*.pyc
 .pytest_cache/
+.env
