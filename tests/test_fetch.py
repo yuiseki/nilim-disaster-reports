@@ -140,3 +140,16 @@ def test_successful_retry_does_not_count_partial_as_complete(tmp_path, monkeypat
 def test_report_id_must_match_url(tmp_path):
     with pytest.raises(ValueError):
         m.document_path(tmp_path, dict(ROW, report_id=1151))
+
+def test_whole_and_legacy_split_names_are_supported(tmp_path):
+    for name in ['ks1320.pdf','ks1320_01a.pdf','ks132001.pdf']:
+        url=ROW['url'].rsplit('/',1)[0]+'/'+name
+        assert m.document_path(tmp_path,dict(ROW,url=url)).name==name
+
+def test_flash_urls_are_scoped_and_collision_safe(tmp_path):
+    row=dict(ROW,source_type='flash',report_id='flash-test',url='https://www.nilim.go.jp/lab/bbg/saigai/R6/noto.pdf')
+    path=m.document_path(tmp_path,row)
+    other=m.document_path(tmp_path,dict(row,url='https://www.nilim.go.jp/lab/bbg/saigai/R5/noto.pdf'))
+    assert path!=other and path.parent==tmp_path/'pdf/flash'
+    for bad in ['https://example.com/lab/bbg/saigai/R6/noto.pdf','https://www.nilim.go.jp/lab/bbg/saigai/%2e%2e/a.pdf']:
+        with pytest.raises(ValueError): m.document_path(tmp_path,dict(row,url=bad))

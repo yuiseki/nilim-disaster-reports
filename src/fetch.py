@@ -23,17 +23,25 @@ class Retryable(Exception):
 
 def document_path(root, row):
     u = urlsplit(row['url'])
+    if u.scheme != 'https' or u.netloc != 'www.nilim.go.jp' or u.query or u.fragment:
+        raise ValueError('unexpected source URL')
+    decoded = unquote(u.path)
+    if any(part in ('.','..') for part in decoded.split('/')):
+        raise ValueError('unsafe PDF path')
+    if row.get('source_type') == 'flash':
+        if not re.fullmatch(r'/lab/bbg/saigai/[A-Za-z0-9_./()-]+\.pdf', decoded):
+            raise ValueError('unexpected flash PDF path')
+        name = hashlib.sha256(row['url'].encode()).hexdigest()[:24] + '.pdf'
+        return Path(root) / 'pdf' / 'flash' / name
     report_id = str(row['report_id'])
     if not re.fullmatch(r'[0-9]{1,6}', report_id):
         raise ValueError('unexpected report ID')
-    if u.scheme != 'https' or u.netloc != 'www.nilim.go.jp' or u.query or u.fragment:
-        raise ValueError('unexpected source URL')
     folder = 'tnn' + report_id.zfill(4) + 'pdf'
     filename = 'ks' + report_id.zfill(4)
-    pattern = r'/lab/bcg/siryou/tnn/' + folder + '/' + filename + r'(?:_[0-9]+|[0-9]{2})\.pdf'
-    if not re.fullmatch(pattern, unquote(u.path)):
+    pattern = r'/lab/bcg/siryou/tnn/' + folder + '/' + filename + r'[A-Za-z0-9_.()-]*\.pdf'
+    if not re.fullmatch(pattern, decoded):
         raise ValueError('unexpected PDF path')
-    return Path(root) / 'pdf' / Path(u.path).name
+    return Path(root) / 'pdf' / Path(decoded).name
 
 
 
