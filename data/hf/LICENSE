@@ -1,18 +1,23 @@
 yuiseki/nilim-disaster-reports: licence and attribution
 
-Licence: other (Hugging Face metadata: license_name nilim-pdl1.0-and-co-publisher-notices)
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
 
-  - Text of reports and bulletins written by NILIM alone (rights classes a and b in
-    RIGHTS_REVIEW.tsv) is NILIM content under the NILIM site terms quoted below, that is,
-    the Public Data License 1.0 (PDL1.0), which is compatible with CC BY 4.0.
-  - Text of joint publications and joint reports (class c) is co-owned by NILIM and the
-    organisations named in RIGHTS_REVIEW.tsv (mainly PWRI and BRI). The NILIM terms speak
-    only for NILIM; the co-owners' own terms were not checked for this dataset.
-  - Class d text could not be assessed (mostly empty pages and unreadable text layers).
-  - Reports whose text reserves all rights (798, 868, 875, 1042) are not included.
+Why CC BY 4.0
+-------------
+The dataset owner chose to publish only NILIM's own works: reports and bulletins whose text
+NILIM published alone with no rights notice of another party (rights classes a and b in
+RIGHTS_REVIEW.tsv; 26 reports, 65 PDFs, 883 pages). Under the NILIM site terms quoted below,
+NILIM content without another rights notice may be used under the Public Data License 1.0
+(PDL1.0), which is compatible with CC BY 4.0.
 
-This is why the dataset is not labelled cc-by-4.0 as a whole. Users are responsible for
-checking the parts they use (filter by class in RIGHTS_REVIEW.tsv, joined on source_url).
+Left out (EXCLUDE.txt, one reason per report; 118 reports, 564 PDFs, 13,242 pages):
+  - class c: every report jointly published or co-authored with another organisation
+    (PWRI 土木研究所, BRI 建築研究所, PARI 港湾空港技術研究所, MPAT 海上・港湾・航空技術研究所,
+    universities, academic societies, the MLIT Housing Bureau and others), including the four
+    reports whose text reserves all rights (798, 868, 875, 1042);
+  - class d: every report whose rights could not be assessed (no or unreadable text layer, or a
+    passage that may be quoted from others without credit).
 
 What this dataset contains
 --------------------------
@@ -65,52 +70,23 @@ PDL1.0. State the source in the form shown; when content is edited, state that s
 do not present it as made by the government. Logos, and content that explicitly applies other
 terms with a reason, are outside these terms.)
 
-Rights notices in the reports
------------------------------
-Found by reading the text of every PDF (details per PDF in RIGHTS_REVIEW.tsv):
-
-1. Joint publications (included). Colophons of co-published 国総研資料 carry the
-   co-publisher's mark next to NILIM's, for example report 1151, ks1151_15.pdf page 1:
-     編集・発行 ©国土技術政策総合研究所
-                ©国立研究開発法人土木研究所
-     本資料の転載・複写の問い合わせは ...
-   This is a rights notice naming another rights holder. The NILIM terms cannot license the
-   co-owner's share; this dataset does not claim that they do.
-
-2. Reservation of all rights (excluded). Four reports state:
-   - 798 (with PARI), ks079843.pdf page 1:
-       Copyright ○ C （2015）by PARI
-       All rights reserved. No part of this book must be reproduced by any means without the written
-       permission of the President of PARI
-       この資料は、港湾空港技術研究所理事長の承認を得て刊行したものである。したがって、本報告書の全部
-       または一部の転載、複写は港湾空港技術研究所理事長の文書による承認を得ずしてこれを行ってはならない。
-   - 868 (with PWRI), ks086801.pdf page 2:
-       Copyright © (2015) by N.I.L.I.M. and P.W.R.I.
-       All rights reserved. No part of this book may be reproduced by any means, nor transmitted,
-       nor translated into a machine language without the written permission of the
-       Director-General of N.I.L.I.M. and Chief Executive of P.W.R.I.
-       この報告書は、国土交通省国土技術政策総合研究所所長及び国立研究開発法人土木研究所理事長の承認を得て
-       刊行したものである。したがって、本報告書の全部又は一部の転載、複製は、国土交通省国土技術政策総合研究所
-       所長及び国立研究開発法人土木研究所理事長の文書による承認を得ずしてこれを行ってはならない。
-   - 875 (with PWRI), ks087501.pdf page 2: the same notice for NILIM and PWRI.
-   - 1042 (with MPAT), ks1042.pdf page 54:
-       Copyright ○EC （2018）by MPAT
-       All rights reserved. No part of this book must be reproduced by any means without the written
-       permission of the President of MPAT
-       この資料は、海上・港湾・航空技術研究所理事長の承認を得て刊行したものである。したがって、本報告書の
-       全部または一部の転載、複写は海上・港湾・航空技術研究所理事長の文書による承認を得ずしてこれを行ってはならない。
-   (Quoted from the PDF text layer; line breaks and spacing simplified.) These are rights notices
-   (権利表記) that apply other terms with a stated reason, so the PDL1.0 default does not
-   apply. Their 75 PDFs are listed in EXCLUDE.txt and are not in this dataset.
-
-3. NILIM's own colophon mark. Every 国総研資料 colophon carries 「編集・発行 ©国土技術政策総合研究所」
-   and 「本資料の転載・複写の問い合わせは」 with a contact. It names NILIM, the default rights
-   holder under the terms above, and asks for no approval; it was not treated as a restriction.
+Rights notices in the published reports
+---------------------------------------
+Every 国総研資料 colophon carries 「編集・発行 ©国土技術政策総合研究所」 and
+「本資料の転載・複写の問い合わせは」 with a contact. It names NILIM, the default rights holder
+under the terms above, and asks for no approval; it was not treated as another rights notice.
+No co-publisher's mark, all-rights-reserved notice or reprint prohibition was found in the text
+of the published reports. The notices that led to exclusion are quoted per report in EXCLUDE.txt,
+for example report 868, ks086801.pdf page 2:
+    Copyright © (2015) by N.I.L.I.M. and P.W.R.I.
+    All rights reserved. ...
+    本報告書の全部又は一部の転載、複製は、国土交通省国土技術政策総合研究所所長及び国立研究開発法人
+    土木研究所理事長の文書による承認を得ずしてこれを行ってはならない。
 
 Third-party material
 --------------------
 This dataset carries only the extracted text, not the figures, maps, photographs or PDFs.
-Credit lines in the text (for example 「（山口県提供）」, 「出典：地理院地図」, 「©2012 ZENRIN」,
+Credit lines in the text (for example 「（山口県提供）」, 「出典：地理院地図」, 「出典：GoogleEarth」,
 「国土地理院撮影」) name the owners of images that are not reproduced here. Text inside a report
 that is quoted from, or owned by, a third party keeps its own rights; neither the NILIM terms
 nor this file grant anything for it.
@@ -121,7 +97,7 @@ In the form the NILIM terms request (１）ア and イ):
 
   出典：「国総研資料（災害調査報告）」（国土技術政策総合研究所）（https://www.nilim.go.jp/lab/bbg/saigai/TEC-FORCE.html）（2026年10月6日〜7日に利用）
   出典：「国内で生じた災害の調査報告」（国土技術政策総合研究所）（https://www.nilim.go.jp/lab/bbg/saigai/index.html）（2026年10月6日〜7日に利用）
-  国土技術政策総合研究所の各PDF（各行の source_url）の文字層から pdftotext で本文を抽出し、yuiseki がページ単位の JSONL に収録したもの（Hugging Face: yuiseki/nilim-disaster-reports）を加工して作成。本文の訂正・正規化は行っていない。共同刊行の報告は土木研究所・建築研究所等との共同著作物である。
+  国土技術政策総合研究所の各PDF（各行の source_url）の文字層から pdftotext で本文を抽出し、yuiseki がページ単位の JSONL に収録したもの（Hugging Face: yuiseki/nilim-disaster-reports）を加工して作成。本文の訂正・正規化は行っていない。
 
 English equivalent:
   Source: NILIM disaster survey reports (国総研資料) and field-survey bulletins, National
@@ -129,12 +105,12 @@ English equivalent:
   2026-10-06/07. Text extracted with pdftotext from the PDF text layer of each PDF
   (source_url of each line) and compiled into page-level JSONL by yuiseki
   (Hugging Face: yuiseki/nilim-disaster-reports); the text was not corrected or normalised.
-  This compilation is not made or endorsed by NILIM or by any co-publisher.
+  This compilation is not made or endorsed by NILIM.
 
-When citing a single report, cite the report itself (authors, title, report number and year,
-and for joint publications the co-publisher's report number) and give its source_url.
+When citing a single report, cite the report itself (authors, title, report number and year)
+and give its source_url.
 
 Disclaimer
 ----------
-The compiler (yuiseki) claims no rights of its own in this compilation and gives no warranty.
+The compiler (yuiseki) adds no rights of its own beyond CC BY 4.0 and gives no warranty.
 The rights review is a reading of the text, not legal advice.

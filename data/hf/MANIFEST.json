@@ -5,43 +5,2842 @@
   "files": {
     "tnn.jsonl": {
       "source_type": "tnn",
-      "lines": 8742,
-      "documents": 445,
-      "bytes": 27993652,
-      "sha256": "a9264e21db84345243cf92036f3fddaa0a475471eb28e2f36895b4195bae2e26"
+      "lines": 781,
+      "documents": 46,
+      "bytes": 3547292,
+      "sha256": "46f3b4f011920bceb67c70a5106de510f4fc49151e812b6ed9bcd2e1f4104ca5"
     },
     "flash.jsonl": {
       "source_type": "flash",
-      "lines": 1984,
-      "documents": 109,
-      "bytes": 5371933,
-      "sha256": "66af32105989e71aa5985f00e10df1de5c4dfeefc68bd6cbd8f0fba5d8e9fc12"
+      "lines": 102,
+      "documents": 19,
+      "bytes": 254747,
+      "sha256": "4cd858f2b4a9a51d15ca9796f932f661c095869d37074bed43a754fdb537c5a4"
     }
   },
   "series": {
     "tnn": {
-      "documents": 445,
-      "pages": 8742,
-      "characters": 12346948,
-      "empty_pages": 351,
+      "documents": 46,
+      "pages": 781,
+      "characters": 2101307,
+      "empty_pages": 5,
       "replacement_characters": 0
     },
     "flash": {
-      "documents": 109,
-      "pages": 1984,
-      "characters": 1659185,
-      "empty_pages": 1,
+      "documents": 19,
+      "pages": 102,
+      "characters": 68322,
+      "empty_pages": 0,
       "replacement_characters": 0
     }
   },
   "totals": {
-    "documents": 554,
-    "pages": 10726,
-    "characters": 14006133,
-    "empty_pages": 352,
+    "documents": 65,
+    "pages": 883,
+    "characters": 2169629,
+    "empty_pages": 5,
     "replacement_characters": 0
   },
   "excluded": [
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_01.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 1,
+      "characters": 1135,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_03.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 1,
+      "characters": 1909,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_04.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 2,
+      "characters": 7911,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_05.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 7,
+      "characters": 8576,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_06.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 7,
+      "characters": 7547,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_07.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 16,
+      "characters": 32791,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_08.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 38,
+      "characters": 30761,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_09.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 48,
+      "characters": 29046,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_10.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 64,
+      "characters": 40439,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_11.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 64,
+      "characters": 74758,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_12.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 25,
+      "characters": 20056,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_13.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 39,
+      "characters": 19956,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_14.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 3,
+      "characters": 2640,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_15.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 241,
+      "characters": 147920,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_16.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 106,
+      "characters": 61888,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_17.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 39,
+      "characters": 17017,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_18.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 5,
+      "characters": 9947,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_19.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 6,
+      "characters": 5810,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_20.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 26,
+      "characters": 32612,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_21.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 1,
+      "characters": 377,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1320pdf/ks1320_22.pdf",
+      "source_type": "tnn",
+      "report_id": "1320",
+      "pages": 1,
+      "characters": 485,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_01.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 1,
+      "characters": 1182,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_02.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 1,
+      "characters": 1325,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_03.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 1,
+      "characters": 1279,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_04.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 1,
+      "characters": 1642,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_05.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 1,
+      "characters": 2397,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_06.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 4,
+      "characters": 1464,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_07.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 4,
+      "characters": 1531,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_08.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 70,
+      "characters": 30654,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_09.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 34,
+      "characters": 14672,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_10.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 3,
+      "characters": 2016,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_11.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 22,
+      "characters": 19093,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_12.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 14,
+      "characters": 22085,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_13.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 6,
+      "characters": 4795,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_14.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 1,
+      "characters": 151,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1151pdf/ks1151_15.pdf",
+      "source_type": "tnn",
+      "report_id": "1151",
+      "pages": 1,
+      "characters": 511,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115001.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115002.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115003.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 6,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115004.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115005.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115006.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115007.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115008.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 5,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115009.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115010.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 12,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115012.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 8,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115013.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 10,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115014.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 7,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115015.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 13,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115016.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 6,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115018.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0115pdf/ks0115019.pdf",
+      "source_type": "tnn",
+      "report_id": "115",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 80 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133001.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133002.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133003.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 5,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133004.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133005.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133006.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133007.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133008.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 8,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133009.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133010.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 14,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133011.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 8,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133012.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 10,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133013.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 13,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133014.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 17,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133015.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 3,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0133pdf/ks0133016.pdf",
+      "source_type": "tnn",
+      "report_id": "133",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 88 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233001.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233002.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233003.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 7,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233004.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233005.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233006.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233007.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233008.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 5,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233009.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 26,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233010.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 2,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233011.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 9,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233012.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 9,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233013.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 13,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233014.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 5,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233015.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 6,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233016.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 17,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233017.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 30,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233018.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 16,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233019.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 9,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233020.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 3,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0233pdf/ks0233021.pdf",
+      "source_type": "tnn",
+      "report_id": "233",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "d",
+      "basis": "no text layer: all 167 pages are empty, so cover, author list and colophon could not be read"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248001.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 1,
+      "characters": 814,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248002.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 1,
+      "characters": 1010,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248003.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 1,
+      "characters": 334,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248004.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 2,
+      "characters": 238,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248005.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 3,
+      "characters": 265,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248006.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 3,
+      "characters": 594,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248007.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 6,
+      "characters": 773,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248008.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 2,
+      "characters": 154,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248009.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 2,
+      "characters": 5828,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248010.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 5,
+      "characters": 5982,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248011.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 9,
+      "characters": 17195,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248012.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 7,
+      "characters": 21395,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248013.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 2,
+      "characters": 1247,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248014.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 2,
+      "characters": 1872,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248015.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 1,
+      "characters": 82,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248016.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 6,
+      "characters": 4932,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248017.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 3,
+      "characters": 3472,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248018.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 9,
+      "characters": 17038,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248019.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 6,
+      "characters": 4881,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248020.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 7,
+      "characters": 5784,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248021.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 6,
+      "characters": 7207,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248022.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 12,
+      "characters": 22055,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248023.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 12,
+      "characters": 17532,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248024.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 12,
+      "characters": 12519,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248025.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 5,
+      "characters": 35128,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248026.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 3,
+      "characters": 485,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248027.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 9,
+      "characters": 10040,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248028.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 6,
+      "characters": 2170,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248029.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 5,
+      "characters": 6843,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248030.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 6,
+      "characters": 3988,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248031.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 9,
+      "characters": 5307,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248032.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 7,
+      "characters": 4392,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248033.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 3,
+      "characters": 1860,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248034.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 13,
+      "characters": 15892,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248035.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 15,
+      "characters": 18577,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248036.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 10,
+      "characters": 13143,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248037.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 2,
+      "characters": 997,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0248pdf/ks0248038.pdf",
+      "source_type": "tnn",
+      "report_id": "248",
+      "pages": 1,
+      "characters": 180,
+      "rights_class": "c",
+      "basis": "joint survey and authorship by three institutes (author list includes PWRI staff); a figure page also carries a PWRI copyright line"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250001.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250002.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 1,
+      "characters": 1560,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250003.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 1,
+      "characters": 2012,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250004.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 3,
+      "characters": 1642,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250005.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 9,
+      "characters": 14127,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250006.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 6,
+      "characters": 9764,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250007.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 11,
+      "characters": 15779,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250008.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 8,
+      "characters": 39308,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250009.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 3,
+      "characters": 21669,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250010.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 3,
+      "characters": 21023,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250011.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 3,
+      "characters": 1305,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250012.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 2,
+      "characters": 7360,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250013.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 6,
+      "characters": 9915,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250014.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 15,
+      "characters": 22722,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250015.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 51,
+      "characters": 71605,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250016.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 6,
+      "characters": 714,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250017.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 11,
+      "characters": 27216,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0250pdf/ks0250018.pdf",
+      "source_type": "tnn",
+      "report_id": "250",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "c",
+      "basis": "proceedings of a joint meeting; papers by universities and PWRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041501.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 1,
+      "characters": 1135,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041502.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 1,
+      "characters": 1544,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041503.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 3,
+      "characters": 4983,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041504.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 2,
+      "characters": 2111,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041505.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 7,
+      "characters": 9779,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041506.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 19,
+      "characters": 81179,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041507.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 23,
+      "characters": 17341,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041508.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 53,
+      "characters": 47968,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041509.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 7,
+      "characters": 4146,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041510.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 5,
+      "characters": 2686,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041511.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 15,
+      "characters": 11661,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041512.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 31,
+      "characters": 102164,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041513.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 2,
+      "characters": 1951,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0415pdf/ks041514.pdf",
+      "source_type": "tnn",
+      "report_id": "415",
+      "pages": 1,
+      "characters": 483,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043001.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 1,
+      "characters": 1180,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043002.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 1,
+      "characters": 1438,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043003.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 3,
+      "characters": 4507,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043004.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 3,
+      "characters": 3573,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043005.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 9,
+      "characters": 15607,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043006.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 35,
+      "characters": 165164,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043007.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 67,
+      "characters": 84947,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043008.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 4,
+      "characters": 3322,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043009.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 14,
+      "characters": 28718,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043010.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 11,
+      "characters": 8227,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043011.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 59,
+      "characters": 188569,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043012.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 2,
+      "characters": 1927,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0430pdf/ks043013.pdf",
+      "source_type": "tnn",
+      "report_id": "430",
+      "pages": 1,
+      "characters": 481,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043801.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 1,
+      "characters": 1521,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043802.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 1,
+      "characters": 1115,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043803.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 1,
+      "characters": 893,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043804.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 3,
+      "characters": 2417,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043805.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 4,
+      "characters": 2850,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043806.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 16,
+      "characters": 9257,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043807.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 31,
+      "characters": 69354,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043808.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 7,
+      "characters": 10146,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043809.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 23,
+      "characters": 224832,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043810.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 20,
+      "characters": 12332,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043811.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 82,
+      "characters": 138401,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043812.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 6,
+      "characters": 8781,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043813.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 3,
+      "characters": 2673,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043814.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 50,
+      "characters": 128363,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043815.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 1,
+      "characters": 411,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0438pdf/ks043816.pdf",
+      "source_type": "tnn",
+      "report_id": "438",
+      "pages": 1,
+      "characters": 657,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043901.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043902.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 1,
+      "characters": 1141,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043903.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 1,
+      "characters": 829,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043904.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 3,
+      "characters": 2830,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043905.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 5,
+      "characters": 2921,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043906.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 9,
+      "characters": 12278,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043907.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 10,
+      "characters": 17472,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043908.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 22,
+      "characters": 39301,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043909.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 16,
+      "characters": 13721,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043910.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 57,
+      "characters": 128161,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043911.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 19,
+      "characters": 27527,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043912.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 32,
+      "characters": 59749,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043913.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 75,
+      "characters": 308639,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043914.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 1,
+      "characters": 549,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0439pdf/ks043915.pdf",
+      "source_type": "tnn",
+      "report_id": "439",
+      "pages": 1,
+      "characters": 0,
+      "rights_class": "c",
+      "basis": "companion of 438; cover and colophon have no text, and the author list (text layer with wrong code points) repeats the code-point string that 438's author list uses for 独立行政法人土木研究所"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048101.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 1,
+      "characters": 1325,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048102.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 6,
+      "characters": 7914,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048103.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 3,
+      "characters": 1807,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048104.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 25,
+      "characters": 23076,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048105.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 35,
+      "characters": 201199,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048106.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 9,
+      "characters": 8123,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048107.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 40,
+      "characters": 61036,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048108.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 24,
+      "characters": 67597,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048109.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 2,
+      "characters": 3344,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048110.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 2,
+      "characters": 751,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048111.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 5,
+      "characters": 9450,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048112.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 16,
+      "characters": 139673,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048113.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 13,
+      "characters": 9948,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048114.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 23,
+      "characters": 34131,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048115.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 1,
+      "characters": 1346,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0481pdf/ks048116.pdf",
+      "source_type": "tnn",
+      "report_id": "481",
+      "pages": 1,
+      "characters": 483,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048601.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 1,
+      "characters": 1553,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048602.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 1,
+      "characters": 1078,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048603.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 1,
+      "characters": 751,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048604.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 3,
+      "characters": 4286,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048605.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 10,
+      "characters": 29944,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048606.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 23,
+      "characters": 20046,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048607.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 38,
+      "characters": 43165,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048608.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 18,
+      "characters": 28025,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048609.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 48,
+      "characters": 146007,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048610.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 20,
+      "characters": 16039,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048611.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 19,
+      "characters": 17263,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048612.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 57,
+      "characters": 95266,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048613.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 5,
+      "characters": 10377,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048614.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 1,
+      "characters": 507,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0486pdf/ks048615.pdf",
+      "source_type": "tnn",
+      "report_id": "486",
+      "pages": 1,
+      "characters": 2642,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063601.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 14,
+      "characters": 13976,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063602.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 2,
+      "characters": 2488,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063603.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 8,
+      "characters": 7769,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063604.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 20,
+      "characters": 47058,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063605.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 48,
+      "characters": 179402,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063606.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 2,
+      "characters": 1340,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063607.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 50,
+      "characters": 32948,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063608.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 20,
+      "characters": 35733,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063609.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 56,
+      "characters": 44899,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063610.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 42,
+      "characters": 26503,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063611.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 20,
+      "characters": 16474,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063612.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 2,
+      "characters": 1952,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063613.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 26,
+      "characters": 31361,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063614.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 88,
+      "characters": 45309,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063615.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 15,
+      "characters": 8079,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063616.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 17,
+      "characters": 18067,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063617.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 2,
+      "characters": 2391,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063618.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 117,
+      "characters": 79172,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063619.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 20,
+      "characters": 18115,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063620.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 2,
+      "characters": 3445,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063621.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 2,
+      "characters": 521,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0636pdf/ks063622.pdf",
+      "source_type": "tnn",
+      "report_id": "636",
+      "pages": 4,
+      "characters": 5326,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064601.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 1,
+      "characters": 1279,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064602.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 1,
+      "characters": 1691,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064603.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 2,
+      "characters": 2591,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064604.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 5,
+      "characters": 8529,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064605.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 11,
+      "characters": 17175,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064606.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 28,
+      "characters": 30504,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064607.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 7,
+      "characters": 12937,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064608.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 39,
+      "characters": 34825,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064609.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 156,
+      "characters": 208574,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064610.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 100,
+      "characters": 82859,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064611.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 25,
+      "characters": 32670,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064612.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 10,
+      "characters": 8639,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064613.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 86,
+      "characters": 81946,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064614.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 23,
+      "characters": 12321,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064615.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 1,
+      "characters": 638,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks064616.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 1,
+      "characters": 427,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0646pdf/ks0646seigo.pdf",
+      "source_type": "tnn",
+      "report_id": "646",
+      "pages": 1,
+      "characters": 1040,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; geological map figures used under an AIST approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0680pdf/ks0680.pdf",
+      "source_type": "tnn",
+      "report_id": "680",
+      "pages": 26,
+      "characters": 54694,
+      "rights_class": "c",
+      "basis": "co-authorship: one of the four authors is a PARI researcher (the others are NILIM and MLIT staff); a photo is also credited to GSI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070303.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 1,
+      "characters": 637,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070301.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 1,
+      "characters": 1367,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070302.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 4,
+      "characters": 7177,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070304.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 2,
+      "characters": 2131,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070305.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 15,
+      "characters": 15768,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070306.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 30,
+      "characters": 15920,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070307.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 8,
+      "characters": 12851,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070308.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 17,
+      "characters": 30980,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070309.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 7,
+      "characters": 9675,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070310.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 1,
+      "characters": 1158,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070311.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 1,
+      "characters": 1689,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070312.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 1,
+      "characters": 370,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0703pdf/ks070313.pdf",
+      "source_type": "tnn",
+      "report_id": "703",
+      "pages": 1,
+      "characters": 491,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072804.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 2,
+      "characters": 2514,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072801.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 1,
+      "characters": 1201,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072802.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 1,
+      "characters": 1901,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072803.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 2,
+      "characters": 3043,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072805.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 1,
+      "characters": 1436,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072806.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 15,
+      "characters": 16183,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072807.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 5,
+      "characters": 4463,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072808.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 6,
+      "characters": 2834,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072809.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 9,
+      "characters": 9543,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072810.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 3,
+      "characters": 9999,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072811.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 6,
+      "characters": 13916,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072812.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 2,
+      "characters": 29351,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072813.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 8,
+      "characters": 4737,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072814.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 16,
+      "characters": 7337,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072815.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 70,
+      "characters": 30792,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072816.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 7,
+      "characters": 3947,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072817.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 3,
+      "characters": 1875,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072818.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 16,
+      "characters": 6409,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072819.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 21,
+      "characters": 13147,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072820.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 19,
+      "characters": 24578,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072821.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 2,
+      "characters": 2601,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072822.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 1,
+      "characters": 38490,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0728pdf/ks072823.pdf",
+      "source_type": "tnn",
+      "report_id": "728",
+      "pages": 3,
+      "characters": 5239,
+      "rights_class": "c",
+      "basis": "joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)"
+    },
     {
       "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0798pdf/ks079801.pdf",
       "source_type": "tnn",
@@ -430,6 +3229,114 @@
       "basis": "joint publication with PARI, whose colophon reserves all rights and forbids reprinting or copying any part without written approval"
     },
     {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081402.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 4,
+      "characters": 4360,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081401.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 1,
+      "characters": 1223,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081403.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 9,
+      "characters": 11132,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081404.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 17,
+      "characters": 84524,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081405.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 53,
+      "characters": 41596,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081406.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 295,
+      "characters": 223875,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081407.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 344,
+      "characters": 260623,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081408.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 17,
+      "characters": 12233,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081409.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 23,
+      "characters": 7541,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081410.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 2,
+      "characters": 2909,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081411.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 1,
+      "characters": 467,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0814pdf/ks081412.pdf",
+      "source_type": "tnn",
+      "report_id": "814",
+      "pages": 1,
+      "characters": 425,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
       "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0868pdf/ks086803.pdf",
       "source_type": "tnn",
       "report_id": "868",
@@ -709,6 +3616,267 @@
       "basis": "joint publication; the cover verso reserves all rights for NILIM and PWRI and forbids reprinting or copying any part without written approval"
     },
     {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096704.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 3,
+      "characters": 3245,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096701.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 1,
+      "characters": 1118,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096702.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 1,
+      "characters": 1674,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096703.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 1,
+      "characters": 2038,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096705.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 3,
+      "characters": 2937,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096706.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 13,
+      "characters": 9252,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096707.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 21,
+      "characters": 19109,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096708.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 9,
+      "characters": 7184,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096709.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 70,
+      "characters": 66978,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096710.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 34,
+      "characters": 48111,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096711.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 41,
+      "characters": 41843,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096712.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 162,
+      "characters": 136035,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096713.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 2,
+      "characters": 1828,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096714.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 1,
+      "characters": 233,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0967pdf/ks096715.pdf",
+      "source_type": "tnn",
+      "report_id": "967",
+      "pages": 1,
+      "characters": 480,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098001.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 1,
+      "characters": 1434,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098002.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 2,
+      "characters": 3481,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098003.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 1,
+      "characters": 1224,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098004.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 1,
+      "characters": 3874,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098005.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 1,
+      "characters": 654,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098006.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 3,
+      "characters": 2495,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098007.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 4,
+      "characters": 3642,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098008.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 33,
+      "characters": 21441,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098009.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 21,
+      "characters": 6815,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098010.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 14,
+      "characters": 16921,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098011.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 9,
+      "characters": 12154,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098012.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 1,
+      "characters": 870,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098013.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 1,
+      "characters": 983,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn0980pdf/ks098014.pdf",
+      "source_type": "tnn",
+      "report_id": "980",
+      "pages": 1,
+      "characters": 482,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
       "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1042pdf/ks1042.pdf",
       "source_type": "tnn",
       "report_id": "1042",
@@ -716,13 +3884,1246 @@
       "characters": 72079,
       "rights_class": "c",
       "basis": "joint publication with MPAT (港湾空港技術研究所資料 No.1348), whose colophon reserves all rights and forbids reprinting or copying any part without written approval"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106901.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 1,
+      "characters": 1259,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106902.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 2,
+      "characters": 1592,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106903.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 1,
+      "characters": 558,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106904.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 1,
+      "characters": 1799,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106905.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 4,
+      "characters": 2994,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106906.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 2,
+      "characters": 785,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106907.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 40,
+      "characters": 17042,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106908.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 34,
+      "characters": 14165,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106909.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 1,
+      "characters": 836,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106910.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 1,
+      "characters": 260,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1069pdf/ks106911.pdf",
+      "source_type": "tnn",
+      "report_id": "1069",
+      "pages": 1,
+      "characters": 431,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_01.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 1,
+      "characters": 1532,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_02.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 1,
+      "characters": 1660,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_03.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 1,
+      "characters": 1474,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_04.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 4,
+      "characters": 4860,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_05.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 1,
+      "characters": 2777,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_06.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 8,
+      "characters": 4256,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_07.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 7,
+      "characters": 8359,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_08.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 2,
+      "characters": 2039,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_09.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 12,
+      "characters": 17439,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_10.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 161,
+      "characters": 113642,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_11.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 40,
+      "characters": 35199,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_12.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 69,
+      "characters": 30789,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_13.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 108,
+      "characters": 90024,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_14.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 1,
+      "characters": 343,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1111pdf/ks1111_15.pdf",
+      "source_type": "tnn",
+      "report_id": "1111",
+      "pages": 1,
+      "characters": 695,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_04_1.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 3,
+      "characters": 3169,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_03.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 4,
+      "characters": 5002,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_04.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 6,
+      "characters": 11044,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_05.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 1,
+      "characters": 2239,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_06.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 19,
+      "characters": 17069,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_07.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 460,
+      "characters": 282244,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_08.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 14,
+      "characters": 17425,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_09.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 156,
+      "characters": 94277,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_10.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 123,
+      "characters": 68172,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_11.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 35,
+      "characters": 13734,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_12.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 128,
+      "characters": 83727,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_22.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 2,
+      "characters": 2858,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_13.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 30,
+      "characters": 25593,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_14.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 167,
+      "characters": 165829,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_15.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 5,
+      "characters": 8131,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_16.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 5,
+      "characters": 3694,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_17.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 1,
+      "characters": 439,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_18.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 5,
+      "characters": 8345,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_19.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 551,
+      "characters": 1789883,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_20.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 180,
+      "characters": 452290,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1356pdf/ks1356_21.pdf",
+      "source_type": "tnn",
+      "report_id": "1356",
+      "pages": 1,
+      "characters": 440,
+      "rights_class": "c",
+      "basis": "joint publication: co-published as another institute's report series, with that institute's © in the colophon; the author list also names university and company authors"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R8/kumamototekkinkonkurito.pdf",
+      "source_type": "flash",
+      "report_id": "flash-b4570902f297419b",
+      "pages": 51,
+      "characters": 29233,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R8/kumamototetsukotsuzou.pdf",
+      "source_type": "flash",
+      "report_id": "flash-b5471efa07d4efbf",
+      "pages": 21,
+      "characters": 9794,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R8/kumamotokisojiban.pdf",
+      "source_type": "flash",
+      "report_id": "flash-d0ec10b243a3991b",
+      "pages": 16,
+      "characters": 55996,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R8/kumamotohikouzoubuzai.pdf",
+      "source_type": "flash",
+      "report_id": "flash-7cbc6fe5b17537d7",
+      "pages": 16,
+      "characters": 9361,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R8/kumamotokawarayanetyousa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-9e936778f985c5a0",
+      "pages": 13,
+      "characters": 9864,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R8/kumamotomokuzoutyousa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-7dbdf45b3aa91c02",
+      "pages": 21,
+      "characters": 9250,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R8/kumamotomenshintyosa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-ee8f0b539a5aa90a",
+      "pages": 25,
+      "characters": 21508,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors; society and university members in the survey team"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R7/oitakasaityousa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-464dd3684791d4e0",
+      "pages": 23,
+      "characters": 20746,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R7/notosetsubityousa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-6cd9a18c06402c8c",
+      "pages": 172,
+      "characters": 158499,
+      "rights_class": "c",
+      "basis": "joint authorship: five organisations named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R7/tsukubatatsumaki.pdf",
+      "source_type": "flash",
+      "report_id": "flash-3281589a6b05d5e6",
+      "pages": 4,
+      "characters": 3636,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R7/makinoharatatsumaki.pdf",
+      "source_type": "flash",
+      "report_id": "flash-50e00500acd64b36",
+      "pages": 13,
+      "characters": 14384,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R7/ofunatokasai.pdf",
+      "source_type": "flash",
+      "report_id": "flash-52439ca7dac99a2e",
+      "pages": 66,
+      "characters": 46583,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI, one author at a university"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R5/notojishin07.pdf",
+      "source_type": "flash",
+      "report_id": "flash-685dca271b0055f5",
+      "pages": 50,
+      "characters": 80149,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R5/notojishin06.pdf",
+      "source_type": "flash",
+      "report_id": "flash-e81230eaa1bdf691",
+      "pages": 93,
+      "characters": 54764,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R5/notojishin03.pdf",
+      "source_type": "flash",
+      "report_id": "flash-45a46007d5c7f83a",
+      "pages": 21,
+      "characters": 18584,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R5/notojishin04.pdf",
+      "source_type": "flash",
+      "report_id": "flash-40a8a672c85ee226",
+      "pages": 26,
+      "characters": 15173,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R5/notojishin05.pdf",
+      "source_type": "flash",
+      "report_id": "flash-fa2d04eda3f1aee4",
+      "pages": 27,
+      "characters": 13601,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R5/notojishin02.pdf",
+      "source_type": "flash",
+      "report_id": "flash-e126c196586fe0de",
+      "pages": 15,
+      "characters": 11239,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R5/notojishin.pdf",
+      "source_type": "flash",
+      "report_id": "flash-4cf97be19f41532a",
+      "pages": 27,
+      "characters": 20266,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R4/fukushimajishin_2.pdf",
+      "source_type": "flash",
+      "report_id": "flash-b49ee581543c027d",
+      "pages": 25,
+      "characters": 14564,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R4/fukushimajishin_1.pdf",
+      "source_type": "flash",
+      "report_id": "flash-c42f5e8ed17b52a2",
+      "pages": 84,
+      "characters": 49260,
+      "rights_class": "c",
+      "basis": "joint authorship: three organisations named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R3/fukushimajishin.pdf",
+      "source_type": "flash",
+      "report_id": "flash-1aacd3d822d5f4bd",
+      "pages": 16,
+      "characters": 17679,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R2/fukushimajishin.pdf",
+      "source_type": "flash",
+      "report_id": "flash-ac000c3bd4aa3f57",
+      "pages": 34,
+      "characters": 44905,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R1/taihu19_2.pdf",
+      "source_type": "flash",
+      "report_id": "flash-527132ec1b7faff7",
+      "pages": 27,
+      "characters": 17979,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R1/taihu19.pdf",
+      "source_type": "flash",
+      "report_id": "flash-c7f3ad790fb710af",
+      "pages": 13,
+      "characters": 12946,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/R1/taihu15.pdf",
+      "source_type": "flash",
+      "report_id": "flash-15a01810d270ddb7",
+      "pages": 63,
+      "characters": 144963,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h30/iburi3.pdf",
+      "source_type": "flash",
+      "report_id": "flash-55cef796dd59f566",
+      "pages": 5,
+      "characters": 6039,
+      "rights_class": "c",
+      "basis": "joint authorship: three organisations named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h30/iburi2.pdf",
+      "source_type": "flash",
+      "report_id": "flash-6e14e8e5de0d5e4d",
+      "pages": 9,
+      "characters": 7226,
+      "rights_class": "c",
+      "basis": "joint authorship: four organisations named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h30/typhoon21.pdf",
+      "source_type": "flash",
+      "report_id": "flash-45be006d7dba6626",
+      "pages": 30,
+      "characters": 28968,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h30/iburi-ekijyouka.pdf",
+      "source_type": "flash",
+      "report_id": "flash-0fa4e88763f00b8c",
+      "pages": 11,
+      "characters": 5656,
+      "rights_class": "c",
+      "basis": "joint expert team of NILIM, PWRI and BRI named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h30/iburi.pdf",
+      "source_type": "flash",
+      "report_id": "flash-f21f3992108a1b2c",
+      "pages": 31,
+      "characters": 32375,
+      "rights_class": "c",
+      "basis": "joint authorship: BRI first, NILIM and the Hokkaido research organisation"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h30/maibara.pdf",
+      "source_type": "flash",
+      "report_id": "flash-a8f01726ea89b74e",
+      "pages": 15,
+      "characters": 13620,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/itoigawa01.pdf",
+      "source_type": "flash",
+      "report_id": "flash-d6ff823f014c6e08",
+      "pages": 19,
+      "characters": 12886,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/tottori01.pdf",
+      "source_type": "flash",
+      "report_id": "flash-a86d7e1584d430f9",
+      "pages": 23,
+      "characters": 16705,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160803kumamotokentiku11.pdf",
+      "source_type": "flash",
+      "report_id": "flash-cc38a3c0052da61a",
+      "pages": 28,
+      "characters": 16248,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160608kumamotokentiku10.pdf",
+      "source_type": "flash",
+      "report_id": "flash-c6ce0fdd1dd4ef0c",
+      "pages": 39,
+      "characters": 24142,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160524kumamotokentiku9.pdf",
+      "source_type": "flash",
+      "report_id": "flash-22c1898ef0fbfcb2",
+      "pages": 21,
+      "characters": 27401,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160429kumamotokentiku8.pdf",
+      "source_type": "flash",
+      "report_id": "flash-1d79ab58451a1d62",
+      "pages": 20,
+      "characters": 36052,
+      "rights_class": "d",
+      "basis": "text layer unreadable (Japanese characters missing), authors cannot be read; the other reports of this NILIM/BRI series are joint"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160426kumamotokentiku7.pdf",
+      "source_type": "flash",
+      "report_id": "flash-1d3b074d6f237666",
+      "pages": 22,
+      "characters": 25927,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160428kumamotokentiku6.pdf",
+      "source_type": "flash",
+      "report_id": "flash-4aff04cf099d05f0",
+      "pages": 19,
+      "characters": 11836,
+      "rights_class": "d",
+      "basis": "text layer unreadable (wrong code points), authors cannot be read; the other reports of this NILIM/BRI series are joint"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160428kumamotokentiku5.pdf",
+      "source_type": "flash",
+      "report_id": "flash-9c56a25881b5055a",
+      "pages": 16,
+      "characters": 9474,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160420kumamotokentiku4.pdf",
+      "source_type": "flash",
+      "report_id": "flash-4b1a8c3263738527",
+      "pages": 18,
+      "characters": 17357,
+      "rights_class": "d",
+      "basis": "text layer unreadable (Japanese characters missing), authors cannot be read; the other reports of this NILIM/BRI series are joint"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160417kumamotokentiku3.pdf",
+      "source_type": "flash",
+      "report_id": "flash-d55b9dcbd7f4ef12",
+      "pages": 52,
+      "characters": 40151,
+      "rights_class": "d",
+      "basis": "text layer mostly unreadable, authors cannot be read; the other reports of this NILIM/BRI series are joint"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160416kumamotokentiku2.pdf",
+      "source_type": "flash",
+      "report_id": "flash-188f716a0ba9dca7",
+      "pages": 19,
+      "characters": 13673,
+      "rights_class": "d",
+      "basis": "text layer unreadable (Japanese characters missing), authors cannot be read; the other reports of this NILIM/BRI series are joint"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h28/20160415kumamotokentiku.pdf",
+      "source_type": "flash",
+      "report_id": "flash-f645daa31c979f3d",
+      "pages": 11,
+      "characters": 9586,
+      "rights_class": "d",
+      "basis": "text layer unreadable (Japanese characters missing), authors cannot be read; the other reports of this NILIM/BRI series are joint"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h27/20150910kinugawa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-2d6a3f13a2f287f9",
+      "pages": 14,
+      "characters": 9826,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h27/20150915serisawa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-b072bc2a38f80be8",
+      "pages": 19,
+      "characters": 6019,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and PWRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/20150218ishinomaki.pdf",
+      "source_type": "flash",
+      "report_id": "flash-ffbbdb8c15f0088f",
+      "pages": 9,
+      "characters": 4588,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and PWRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/150114_nemuro_engan_bosai.pdf",
+      "source_type": "flash",
+      "report_id": "flash-c24e175468389037",
+      "pages": 4,
+      "characters": 3343,
+      "rights_class": "c",
+      "basis": "joint survey team of three institutes and the Hokkaido bureau named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/141219_nemuro_engan_bosai.pdf",
+      "source_type": "flash",
+      "report_id": "flash-f02b2c92e435f6de",
+      "pages": 4,
+      "characters": 2884,
+      "rights_class": "c",
+      "basis": "joint survey team of three institutes and the Hokkaido bureau named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/141129nagano_juutaku2.pdf",
+      "source_type": "flash",
+      "report_id": "flash-66a754c28a69fb18",
+      "pages": 14,
+      "characters": 10019,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/141126nagano_kenchiku.pdf",
+      "source_type": "flash",
+      "report_id": "flash-ee49158dfa3f9ad6",
+      "pages": 25,
+      "characters": 17417,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/141124nagano_juutaku.pdf",
+      "source_type": "flash",
+      "report_id": "flash-691b44519f8978ff",
+      "pages": 18,
+      "characters": 13069,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/140928ontake.pdf",
+      "source_type": "flash",
+      "report_id": "flash-aa431e6f3e7415ea",
+      "pages": 1,
+      "characters": 593,
+      "rights_class": "c",
+      "basis": "survey by NILIM with PWRI researchers (no separate author line)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h26/140916hiroshima_kenchiku.pdf",
+      "source_type": "flash",
+      "report_id": "flash-db0b97ea56a94c6b",
+      "pages": 13,
+      "characters": 6938,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h25typhoon18/130920shiga_ritto.pdf",
+      "source_type": "flash",
+      "report_id": "flash-fcb572f3dfd1549d",
+      "pages": 7,
+      "characters": 3716,
+      "rights_class": "c",
+      "basis": "joint survey report of NILIM and PWRI (title says 国総研・土研)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h25koshigaya/130904tatsumaki.pdf",
+      "source_type": "flash",
+      "report_id": "flash-632033d40d95f5b2",
+      "pages": 32,
+      "characters": 19660,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h25niigata/20130802teradomari_yamada.pdf",
+      "source_type": "flash",
+      "report_id": "flash-6a1bb957ff5b4393",
+      "pages": 3,
+      "characters": 2469,
+      "rights_class": "c",
+      "basis": "joint authorship: PWRI first, NILIM second, survey under a landslide society committee"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h25awaji/20130416awaji.pdf",
+      "source_type": "flash",
+      "report_id": "flash-0aef9decfe5cb011",
+      "pages": 20,
+      "characters": 10666,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24ehime/20120911ehime_saijyoshi.pdf",
+      "source_type": "flash",
+      "report_id": "flash-9e4c43a6b8b95cdf",
+      "pages": 8,
+      "characters": 1889,
+      "rights_class": "c",
+      "basis": "joint survey with a PWRI researcher listed first (no separate author line)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24shiga/h24shiga.pdf",
+      "source_type": "flash",
+      "report_id": "flash-af6b4dc45ffce277",
+      "pages": 7,
+      "characters": 1690,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and PWRI researchers named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24kumamoto/120728kawabegawa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-78a3bcdbc86fe5f2",
+      "pages": 7,
+      "characters": 2234,
+      "rights_class": "c",
+      "basis": "joint authorship: PWRI and NILIM named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24kumamoto/aso120717.pdf",
+      "source_type": "flash",
+      "report_id": "flash-a494b7fa727d71cc",
+      "pages": 49,
+      "characters": 14210,
+      "rights_class": "c",
+      "basis": "joint survey teams of NILIM and PWRI named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24oita/takemotokawa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-384c03143cacc9be",
+      "pages": 8,
+      "characters": 2992,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and PWRI researchers named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24tsukuba/h24tsukuba.pdf",
+      "source_type": "flash",
+      "report_id": "flash-83a84a3e61d6f084",
+      "pages": 16,
+      "characters": 10864,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24tsukuba/h24tsukuba-e.pdf",
+      "source_type": "flash",
+      "report_id": "flash-7e35ed6b401f0764",
+      "pages": 17,
+      "characters": 20409,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named on page 1 (English version)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h24tsukuba/wind20130109.pdf",
+      "source_type": "flash",
+      "report_id": "flash-0305a03ea001083b",
+      "pages": 6,
+      "characters": 11747,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h23kochi/h23kochi.pdf",
+      "source_type": "flash",
+      "report_id": "flash-a29c956b216ddf8c",
+      "pages": 10,
+      "characters": 8523,
+      "rights_class": "c",
+      "basis": "joint survey report: PWRI and NILIM researchers named as 調査実施者"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h22amami/101031amami_report.pdf",
+      "source_type": "flash",
+      "report_id": "flash-c4c8c73c4662fec7",
+      "pages": 7,
+      "characters": 2370,
+      "rights_class": "c",
+      "basis": "joint report of NILIM and PWRI named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h22shobara/h22shobara_saigai.pdf",
+      "source_type": "flash",
+      "report_id": "flash-f8f6363caeefee56",
+      "pages": 9,
+      "characters": 2583,
+      "rights_class": "c",
+      "basis": "joint report of NILIM and PWRI named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h22kagoshima/h22kagoshima.pdf",
+      "source_type": "flash",
+      "report_id": "flash-3347b5faa55a2f28",
+      "pages": 9,
+      "characters": 5426,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and PWRI researchers named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h21mikawa/h21mikawa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-83708510b92eff04",
+      "pages": 5,
+      "characters": 10292,
+      "rights_class": "c",
+      "basis": "joint survey: a PARI researcher is listed first among the investigators (the header names only NILIM); photos credited to the Japan Coast Guard"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/091013tsuchiura-twister/091008tsuchiura-twister.pdf",
+      "source_type": "flash",
+      "report_id": "flash-ca779d96eaf33b73",
+      "pages": 15,
+      "characters": 11869,
+      "rights_class": "c",
+      "basis": "joint authorship: one NILIM and one BRI author named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h21hyougo/h21hyougo1.pdf",
+      "source_type": "flash",
+      "report_id": "flash-3f1d176cdafca869",
+      "pages": 4,
+      "characters": 2425,
+      "rights_class": "d",
+      "basis": "page 4 contains an uncredited narrative passage that reads like quoted press text"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h21hyougo/h21hyougo2.pdf",
+      "source_type": "flash",
+      "report_id": "flash-6b38dd71f82a73f2",
+      "pages": 2,
+      "characters": 654,
+      "rights_class": "c",
+      "basis": "joint survey: a technical college professor listed with NILIM staff (no separate author line)"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/twister/tatebayashi.pdf",
+      "source_type": "flash",
+      "report_id": "flash-9d579325498a7088",
+      "pages": 12,
+      "characters": 10115,
+      "rights_class": "c",
+      "basis": "joint authorship: one NILIM and one BRI author named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/twister/okayama.pdf",
+      "source_type": "flash",
+      "report_id": "flash-8d5890a433983b3f",
+      "pages": 13,
+      "characters": 13194,
+      "rights_class": "c",
+      "basis": "joint authorship: one NILIM and one BRI author named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h19toyota/toyota.pdf",
+      "source_type": "flash",
+      "report_id": "flash-779aa8a2192ad301",
+      "pages": 6,
+      "characters": 4962,
+      "rights_class": "c",
+      "basis": "joint survey: NILIM and BRI researchers named as 調査者"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h19noto/noto-kenchiku.pdf",
+      "source_type": "flash",
+      "report_id": "flash-42474d1c708fdeef",
+      "pages": 1,
+      "characters": 411,
+      "rights_class": "c",
+      "basis": "joint announcement of NILIM and BRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/miyagi-jishin/happyou.pdf",
+      "source_type": "flash",
+      "report_id": "flash-fedcf7e423762ae2",
+      "pages": 1,
+      "characters": 971,
+      "rights_class": "c",
+      "basis": "joint press release of the MLIT Housing Bureau, NILIM and BRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/miyagi-jishin/gaiyou.pdf",
+      "source_type": "flash",
+      "report_id": "flash-3e21c6c1ca69caa4",
+      "pages": 7,
+      "characters": 4163,
+      "rights_class": "c",
+      "basis": "joint survey team of the MLIT Housing Bureau, NILIM and BRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/miyagi-jishin/tuuti.pdf",
+      "source_type": "flash",
+      "report_id": "flash-42dd2a6b41ed5e34",
+      "pages": 1,
+      "characters": 1068,
+      "rights_class": "c",
+      "basis": "not a NILIM document: a technical advice notice issued by the MLIT Housing Bureau"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/miyagi-jishin/houkoku.pdf",
+      "source_type": "flash",
+      "report_id": "flash-17c4554bf7ed0d2c",
+      "pages": 27,
+      "characters": 19926,
+      "rights_class": "c",
+      "basis": "joint survey team of the MLIT Housing Bureau, NILIM and BRI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h17fukuoka/050325.pdf",
+      "source_type": "flash",
+      "report_id": "flash-e30c7af92c2295d9",
+      "pages": 17,
+      "characters": 8432,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/2004924.pdf",
+      "source_type": "flash",
+      "report_id": "flash-a631cd5b56e2408d",
+      "pages": 3,
+      "characters": 3403,
+      "rights_class": "c",
+      "basis": "joint press release of NILIM and PARI"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h15tokachi/terminal030926.pdf",
+      "source_type": "flash",
+      "report_id": "flash-53afd00b6c9c5c4f",
+      "pages": 24,
+      "characters": 12390,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h15tokachi/kenchiku030926.pdf",
+      "source_type": "flash",
+      "report_id": "flash-10f3566ed278d643",
+      "pages": 10,
+      "characters": 4284,
+      "rights_class": "c",
+      "basis": "joint authorship: one NILIM and one BRI author named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/miyagi_0726/miyagi_0726.pdf",
+      "source_type": "flash",
+      "report_id": "flash-b4dd33c157bf3775",
+      "pages": 6,
+      "characters": 3005,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and PWRI named on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h15miyagi/chousa.pdf",
+      "source_type": "flash",
+      "report_id": "flash-c068365fc63170b6",
+      "pages": 14,
+      "characters": 8489,
+      "rights_class": "c",
+      "basis": "joint authorship: NILIM and BRI named as authors on page 1"
+    },
+    {
+      "url": "https://www.nilim.go.jp/lab/bbg/saigai/h15dosha/minamata_dazaifu.pdf",
+      "source_type": "flash",
+      "report_id": "flash-6b7de55fdcef9e00",
+      "pages": 8,
+      "characters": 14418,
+      "rights_class": "c",
+      "basis": "joint survey of NILIM and PWRI stated in the introduction"
     }
   ],
   "excluded_totals": {
-    "documents": 75,
-    "pages": 3399,
-    "characters": 9002626,
-    "empty_pages": 0,
+    "documents": 564,
+    "pages": 13242,
+    "characters": 20839130,
+    "empty_pages": 347,
     "replacement_characters": 0
   },
   "rights": {
@@ -733,19 +5134,19 @@
         "pages": 313
       },
       "b": {
-        "reports": 14,
-        "pdfs": 44,
-        "pages": 601
+        "reports": 12,
+        "pdfs": 42,
+        "pages": 570
       },
       "c": {
-        "reports": 102,
-        "pdfs": 426,
-        "pages": 9334
+        "reports": 0,
+        "pdfs": 0,
+        "pages": 0
       },
       "d": {
-        "reports": 10,
-        "pdfs": 61,
-        "pages": 478
+        "reports": 0,
+        "pdfs": 0,
+        "pages": 0
       }
     },
     "excluded": {
@@ -760,14 +5161,14 @@
         "pages": 0
       },
       "c": {
-        "reports": 4,
-        "pdfs": 75,
-        "pages": 3399
+        "reports": 108,
+        "pdfs": 503,
+        "pages": 12764
       },
       "d": {
-        "reports": 0,
-        "pdfs": 0,
-        "pages": 0
+        "reports": 10,
+        "pdfs": 61,
+        "pages": 478
       }
     }
   },

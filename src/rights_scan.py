@@ -11,9 +11,11 @@ are written in TNN and FLASH below so that the table can be rebuilt and checked.
        publication with another organisation
     d  unclear (no readable text, or text that may be quoted from others without credit)
 
-The scan never decides exclusion; data/hf/EXCLUDE.txt does, and the `excluded` column only mirrors it.
+Publication follows the classes: only classes a and b (NILIM's own works) are published. Every PDF
+of a class c or d report is excluded, and this script writes data/hf/EXCLUDE.txt from the review
+with one reason block per report (the merge reads that file and checks it against the review).
 
-    python3 src/rights_scan.py    # writes data/hf/RIGHTS_REVIEW.tsv
+    python3 src/rights_scan.py    # writes data/hf/RIGHTS_REVIEW.tsv and data/hf/EXCLUDE.txt
 """
 import argparse
 import csv
@@ -23,9 +25,12 @@ import re
 import sys
 
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from merge_jsonl import CLASSES, SERIES, atomic_write, document_lines, plan, read_exclude  # noqa: E402
+from merge_jsonl import CLASSES, SERIES, atomic_write, document_lines, plan  # noqa: E402
 
 REPO=Path(__file__).resolve().parents[1]
+PUBLISH_CLASSES=('a','b')
+CLASS_NAMES={'a':'no other rights notice found','b':'figures/photos credited to others only',
+             'c':'joint publication, co-authorship or rights notice of another party','d':'unclear'}
 COLUMNS=['source_type','report_id','section','source_url','pages','empty_pages','class','other_parties','basis','evidence',
          'reserved_lines','copyright_lines','survey_lines','credit_lines','joint_lines','first_hit','excluded']
 
@@ -64,7 +69,7 @@ TNN={
     '636':('c',BRI,JOINT_TNN,'ks063621.pdf p2 奥付: 「編集･発行 ©国 土技 術 政策総 合研 究所 ©独立行 政法 人建 築研 究所」; cover ks063601.pdf: 「建築研究資料 第 132 号」'),
     '646':('c',PWRI,JOINT_TNN+'; geological map figures used under an AIST approval','ks064616.pdf p1 奥付: 「編集・発行 ©国土技術政策総合研究所 ©独立行政法人土木研究所」; ks064606.pdf p4: 「産総研承認番号:第60635500-A-20110728-002号」'),
     '658':('b','国土地理院 (電子国土); Google','NILIM authors only; base maps and images credited to others','ks0658.pdf p8: 「背景図出典：電子国土」; p9: 「出典：GoogleEarth」'),
-    '680':('b','国土地理院','NILIM authors only; a photo credited to GSI','ks0680.pdf p7: 「写真-3 仙台空港の状況（平成 23 年 3 月 12 日 14 時頃，国土地理院撮影）」'),
+    '680':('c','独立行政法人港湾空港技術研究所 (PARI)','co-authorship: one of the four authors is a PARI researcher (the others are NILIM and MLIT staff); a photo is also credited to GSI','ks0680.pdf p2: 「坪川将丈 * ・水上純一 ** ・畑伊織 *** ・前川亮太 ****」「**** 独立行政法人港湾空港技術研究所 構造研究領域 空港舗装研究チーム 主任研究官」'),
     '703':('c',BRI,JOINT_TNN,'ks070313.pdf p1 奥付: 「編集・発行 ©国土技術政策総合研究所 ©独立行政法人建築研究所」'),
     '726':('a','','NILIM authors only (strong-motion records of MLIT stations); no credit to others found',''),
     '728':('c',PWRI,'joint publication: also 土研資料 No.4260, cover names PWRI as co-publisher; the colophon PDF is missing at the source (404)','ks072801.pdf p1: 「土木資料 第 4260 号」「独立行政法人土木研究所」'),
@@ -175,7 +180,7 @@ FLASH={
     'h22yamaguchi/h22yamaguchi.pdf':('b','気象庁','NILIM (水害研究室) only; rainfall figure credited to JMA','p1: 「出典：気象庁 災害をもたらした気象事例」'),
     'h22gihu/h22gihu.pdf':('b','気象庁','NILIM (水害研究室) only; rainfall figure credited to JMA','p1: 「出典：気象庁 災害をもたらした気象事例」'),
     'h22kagoshima/h22kagoshima.pdf':('c',PWRI,'joint authorship: NILIM and PWRI researchers named on page 1','p1: 「国総研砂防研究室 小山内信智室長」「土研火山・土石流 武澤永純研究員」'),
-    'h21mikawa/h21mikawa.pdf':('b','港湾空港技術研究所 (PARI, survey member); 中部地方整備局; 海上保安庁','authored by NILIM; the survey team included a PARI researcher; photos credited to the Japan Coast Guard','p2: 「海上保安庁提供」; p1: 「（調査者）独立行政法人港湾空港技術研究所海洋・水工部海象情報研究チームリーダー」'),
+    'h21mikawa/h21mikawa.pdf':('c','港湾空港技術研究所 (PARI, survey member); 中部地方整備局; 海上保安庁 (photos)','joint survey: a PARI researcher is listed first among the investigators (the header names only NILIM); photos credited to the Japan Coast Guard','p1: 「国土技術政策総合研究所は，独立行政法人港湾空港技術研究所及び国土交通省中部地方整備局とともに，…被害調査を行った」「（調査者）独立行政法人港湾空港技術研究所海洋・水工部海象情報研究チームリーダー」'),
     '091013tsuchiura-twister/091008tsuchiura-twister.pdf':(BRI,'joint authorship: one NILIM and one BRI author named on page 1'),
     'h21hyougo/h21hyougo3.pdf':('a','','no author line; listed by NILIM; no credit to others found',''),
     'h21hyougo/h21hyougo1.pdf':('d','','page 4 contains an uncredited narrative passage that reads like quoted press text','p4: 「水害を防ぐためには氾濫地点近くの川幅を変えるなどの抜本的な改修工事が必要という。」「川底に堆積（たいせき）した土砂を除去し」'),
@@ -239,7 +244,7 @@ def auto_evidence(page):
 
 def build(data,hf,tnn=TNN,flash=FLASH):
     data=Path(data); hf=Path(hf); jroot=data/'jsonl'
-    groups,_=plan(data); exclude=set(read_exclude(hf))
+    groups,_=plan(data)
     by_url={r['url']:r for s in SERIES for r in groups[s]}
     with (data/'catalog.tsv').open(encoding='utf-8',newline='') as f:
         catalog=list(csv.DictReader(f,delimiter='\t'))
@@ -252,10 +257,37 @@ def build(data,hf,tnn=TNN,flash=FLASH):
         if evidence is None: evidence=auto_evidence(pages[0]) if cls=='c' else ''
         row=dict(source_type=record['source_type'],report_id=str(record['report_id']),section=meta['section'],source_url=meta['url'],
                  pages=record['pages'],empty_pages=record['empty_pages'],**{'class':cls},other_parties=parties,basis=basis,
-                 evidence=evidence,**scan(pages),excluded='yes' if meta['url'] in exclude else 'no')
+                 evidence=evidence,**scan(pages),excluded='no' if cls in PUBLISH_CLASSES else 'yes')
         rows.append({k:clean(row[k]) for k in COLUMNS})
     atomic_write(hf/'RIGHTS_REVIEW.tsv','\t'.join(COLUMNS)+'\n'+''.join('\t'.join(r[k] for k in COLUMNS)+'\n' for r in rows))
+    atomic_write(hf/'EXCLUDE.txt',exclude_text(rows))
     return rows
+
+
+def exclude_text(rows):
+    """EXCLUDE.txt: every PDF of a report outside PUBLISH_CLASSES, grouped by report with the reason."""
+    out=['# Generated by src/rights_scan.py from RIGHTS_REVIEW.tsv; do not edit by hand.',
+         '# PDFs left out of data/hf/{tnn,flash}.jsonl by src/merge_jsonl.py: one source_url per line;',
+         '# blank lines and lines starting with # are ignored.',
+         f'# Published: classes {", ".join(PUBLISH_CLASSES)} only (reports NILIM published alone with no other rights notice).',
+         '# Left out: every PDF of a class c report (joint publication, co-authorship or rights notice of another',
+         '# party) and of a class d report (unclear). To change this, change the decisions or PUBLISH_CLASSES',
+         '# in src/rights_scan.py and run it again.']
+    reports={}
+    for r in rows:
+        if r['excluded']=='yes': reports.setdefault((r['source_type'],r['report_id']),[]).append(r)
+    for (kind,rid),group in reports.items():
+        r=group[0]; cls=r['class']
+        name=f'{kind} {rid}' if kind=='tnn' else f'{kind} {rid} ({r["source_url"].rsplit("/saigai/",1)[-1]})'
+        pages=sum(int(x['pages']) for x in group)
+        out+=['',f'# {name}: class {cls} ({CLASS_NAMES[cls]}); {len(group)} PDFs, {pages} pages; '
+                 f'other parties: {r["other_parties"] or "-"}; basis: {r["basis"]}']
+        if r['evidence']: out.append(f'#   evidence: {r["evidence"]}')
+        reserved=[x for x in group if int(x['reserved_lines'])]
+        for x in reserved:
+            out.append(f'#   ALL RIGHTS RESERVED notice, reprint/copy forbidden without written approval: {x["source_url"].rsplit("/",1)[-1]} {x["first_hit"]}')
+        out+=[x['source_url'] for x in group]
+    return '\n'.join(out)+'\n'
 
 
 def summary(rows):

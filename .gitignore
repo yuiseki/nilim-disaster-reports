@@ -1,5 +1,5 @@
 # Data and logs stay out of Git, except the small Hugging Face card sources under data/hf/.
-# The merged *.jsonl (about 33 MB) are rebuilt by src/merge_jsonl.py and are not tracked.
+# The merged *.jsonl (about 4 MB) are rebuilt by src/merge_jsonl.py and are not tracked.
 data/*
 !data/hf/
 data/hf/*

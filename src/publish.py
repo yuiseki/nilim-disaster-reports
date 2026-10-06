@@ -6,9 +6,10 @@ Dry run by default: checks everything and lists the files that would be uploaded
     python3 src/publish.py --push    # create the public dataset repo and upload
 
 Only README.md, LICENSE, provenance.yaml, MANIFEST.json, RIGHTS_REVIEW.tsv, EXCLUDE.txt and *.jsonl
-directly under data/hf are uploaded. Any other file, any subdirectory, any PDF, a card whose configs
-do not name exactly the *.jsonl files, a card licence that the rights review does not support, a card
-that does not name every excluded report, or a file that differs from MANIFEST.json stops the run.
+directly under data/hf are uploaded. Any other file, any subdirectory, any PDF, a card whose
+configs do not name exactly the *.jsonl files, any included class c or d report, a card licence
+other than cc-by-4.0, a card that does not name every excluded 国総研資料 report, or a file that
+differs from MANIFEST.json stops the run.
 """
 import argparse
 import hashlib
@@ -49,18 +50,16 @@ def config_files(meta):
 
 
 def check_licence(meta,manifest):
-    """cc-by-4.0 only when every included PDF is class a or b; otherwise license: other with a name and a link."""
+    """Only NILIM's own works (rights classes a and b) are published, under cc-by-4.0.
+
+    Any included class c or d report stops the run, and the card licence must be cc-by-4.0.
+    """
     included=manifest.get('rights',{}).get('included')
     if not included: raise PublishError('MANIFEST.json has no rights summary')
-    uncertain=sum(included[c]['pdfs']+included[c]['reports'] for c in ('c','d'))
-    licence=meta.get('license')
-    if licence=='cc-by-4.0':
-        if uncertain: raise PublishError('card licence cc-by-4.0 is not supported: class c/d reports are included (see RIGHTS_REVIEW.tsv)')
-    elif licence=='other':
-        if not meta.get('license_name'): raise PublishError('card licence "other" needs license_name')
-        if meta.get('license_link')!='LICENSE': raise PublishError('card licence "other" needs license_link: LICENSE')
-    else:
-        raise PublishError(f'card licence must be cc-by-4.0 or other, not {licence!r}')
+    if any(included[c]['pdfs'] or included[c]['reports'] for c in ('c','d')):
+        raise PublishError('class c/d reports are included; only classes a and b may be published (see RIGHTS_REVIEW.tsv)')
+    if meta.get('license')!='cc-by-4.0':
+        raise PublishError(f'card licence must be cc-by-4.0, not {meta.get("license")!r}')
 
 
 def sha256(path):
@@ -94,8 +93,9 @@ def upload_plan(hf,check_sha=False):
     if set(manifest.get('files',{}))!=jsonl: raise PublishError('MANIFEST.json does not list exactly the *.jsonl files')
     check_licence(meta,manifest)
     text=card_text(hf/'README.md')
-    for x in manifest.get('excluded',[]):
-        if x['report_id'] not in text: raise PublishError(f'card does not name the excluded report {x["report_id"]}')
+    for x in manifest.get('excluded',[]):  # bulletins are named in EXCLUDE.txt, reports in the card
+        if x['source_type']=='tnn' and x['report_id'] not in text:
+            raise PublishError(f'card does not name the excluded report {x["report_id"]}')
     for p,size in plan:
         if p.name in jsonl:
             info=manifest['files'][p.name]

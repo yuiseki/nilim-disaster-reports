@@ -54,7 +54,7 @@ def test_build_writes_one_row_per_document_in_catalog_order(tmp_path):
         back=list(csv.DictReader(f,delimiter='\t',quoting=csv.QUOTE_NONE))
     assert [r['source_url'] for r in back]==[d[0] for d in h.DOCS]==[r['source_url'] for r in rows]
     assert [r['class'] for r in back]==['c','c','b','a','d']
-    assert [r['excluded'] for r in back]==['no','yes','no','no','no']
+    assert [r['excluded'] for r in back]==['yes','yes','no','no','yes']  # classes c and d are left out
     assert back[1]['copyright_lines']=='1' and back[0]['pages']=='3' and back[0]['empty_pages']=='1'
     assert back[4]['evidence']=='' and back[3]['evidence']==''
     assert list(back[0])==m.COLUMNS
@@ -77,20 +77,48 @@ def test_build_refuses_a_document_without_a_decision(tmp_path):
 def test_build_output_is_accepted_by_merge(tmp_path):
     spec3=importlib.util.spec_from_file_location('merge_jsonl',ROOT/'src/merge_jsonl.py')
     mj=importlib.util.module_from_spec(spec3); spec3.loader.exec_module(mj)
-    data,records=h.build(tmp_path,exclude=h.urls(0,1))
+    data,records=h.build(tmp_path)  # the fixture's own EXCLUDE.txt is empty; build replaces it
     m.build(data,data/'hf',tnn=DECISIONS_TNN,flash=DECISIONS_FLASH)
     man=mj.merge(data,data/'hf')
     assert man['rights']['excluded']['c']==dict(reports=1,pdfs=2,pages=4)
+    assert man['rights']['excluded']['d']==dict(reports=1,pdfs=1,pages=1)
+    assert man['rights']['included']['c']['pdfs']==0 and man['rights']['included']['d']['pdfs']==0
+    assert man['totals']['documents']==2
+    assert (data/'hf/flash.jsonl').read_bytes().split(b'\n')[:-1]==h.source_lines(data,records,h.urls(2))
+
+
+def test_exclude_file_follows_the_classes_with_a_reason_per_report(tmp_path):
+    spec3=importlib.util.spec_from_file_location('merge_jsonl',ROOT/'src/merge_jsonl.py')
+    mj=importlib.util.module_from_spec(spec3); spec3.loader.exec_module(mj)
+    docs=list(h.DOCS)
+    docs[1]=(docs[1][0],'tnn','1320',['All rights reserved. No part of this book may be reproduced\n'],False,'c')
+    data,records=h.build(tmp_path,docs=docs)
+    m.build(data,data/'hf',tnn=DECISIONS_TNN,flash=DECISIONS_FLASH)
+    text=(data/'hf/EXCLUDE.txt').read_text(encoding='utf-8')
+    assert mj.read_exclude(data/'hf')==h.urls(0,1,4)
+    comments=[l for l in text.splitlines() if l.startswith('# tnn 1320') or l.startswith('# flash')]
+    assert any('class c' in l and 'PWRI' in l and 'joint publication' in l for l in comments)
+    assert any('class d' in l and 'text unreadable' in l and 'h28/b.pdf' in l for l in comments)
+    assert 'ALL RIGHTS RESERVED' in text and 'ks1320_22.pdf p1: All rights reserved.' in text
+    assert text.count('# tnn 1320')==1  # one reason block per report, not per PDF
+    assert '758' not in text and DOCS_A not in text
+
+
+DOCS_A=h.DOCS[3][0]
 
 
 REAL=ROOT/'data/hf/RIGHTS_REVIEW.tsv'
 
 @pytest.mark.skipif(not REAL.exists(),reason='rights review not built')
-def test_real_review_covers_the_catalog_and_excludes_only_class_c():
+def test_real_review_covers_the_catalog_and_excludes_exactly_classes_c_and_d():
     rows=list(csv.DictReader(REAL.open(encoding='utf-8',newline=''),delimiter='\t',quoting=csv.QUOTE_NONE))
     cat=list(csv.DictReader((ROOT/'data/catalog.tsv').open(encoding='utf-8',newline=''),delimiter='\t'))
     missing={r['url'] for r in json.loads((ROOT/'data/jsonl/source-missing.json').read_text())}
     assert [r['source_url'] for r in rows]==[c['url'] for c in cat if c['url'] not in missing]
-    assert {r['class'] for r in rows if r['excluded']=='yes'}<={'c'}
+    assert all((r['excluded']=='yes')==(r['class'] in ('c','d')) for r in rows)
+    ex=[l.strip() for l in (ROOT/'data/hf/EXCLUDE.txt').read_text(encoding='utf-8').splitlines() if l.strip() and not l.startswith('#')]
+    assert ex==[r['source_url'] for r in rows if r['excluded']=='yes']
+    reserved={r['report_id'] for r in rows if int(r['reserved_lines'])}
+    assert reserved=={'798','868','875','1042'}
     for r in rows:  # one class per report
         assert r['class']==next(x['class'] for x in rows if x['report_id']==r['report_id'] and x['source_type']==r['source_type'])

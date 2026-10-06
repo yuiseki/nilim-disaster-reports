@@ -9,9 +9,7 @@ spec=importlib.util.spec_from_file_location('publish',ROOT/'src/publish.py')
 m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 
 CARD='''---
-license: other
-license_name: nilim-pdl1.0-and-co-publisher-notices
-license_link: LICENSE
+license: cc-by-4.0
 configs:
 - config_name: default
   default: true
@@ -35,7 +33,7 @@ Excluded: 国総研資料 798.
 ALL=['EXCLUDE.txt','LICENSE','MANIFEST.json','README.md','RIGHTS_REVIEW.tsv','flash.jsonl','provenance.yaml','tnn.jsonl']
 
 
-def rights(c_included=1,d_included=0):
+def rights(c_included=0,d_included=0):
     z=dict(reports=0,pdfs=0,pages=0)
     return dict(included=dict(a=dict(reports=1,pdfs=1,pages=1),b=z,c=dict(z,reports=c_included,pdfs=c_included),d=dict(z,reports=d_included)),
                 excluded=dict(a=z,b=z,c=dict(reports=1,pdfs=1,pages=2),d=z))
@@ -95,26 +93,26 @@ def test_refuses_missing_required_file_and_manifest_mismatch(tmp_path):
     with pytest.raises(m.PublishError,match='MANIFEST'): m.upload_plan(hf)
 
 
-def test_licence_must_follow_the_rights_review(tmp_path):
-    # class c or d text is included: cc-by-4.0 is refused, "other" needs a name and a link
-    hf=build(tmp_path,card=CARD.replace('license: other\nlicense_name: nilim-pdl1.0-and-co-publisher-notices\nlicense_link: LICENSE','license: cc-by-4.0'))
-    with pytest.raises(m.PublishError,match='licen'): m.upload_plan(hf)
-    hf=build(tmp_path/'b',card=CARD.replace('license_name: nilim-pdl1.0-and-co-publisher-notices\n',''))
-    with pytest.raises(m.PublishError,match='license_name'): m.upload_plan(hf)
-    hf=build(tmp_path/'c',card=CARD.replace('license: other','license: mit'))
-    with pytest.raises(m.PublishError,match='licen'): m.upload_plan(hf)
-    # only class a/b text included: cc-by-4.0 is allowed
-    hf=build(tmp_path/'d',card=CARD.replace('license: other\nlicense_name: nilim-pdl1.0-and-co-publisher-notices\nlicense_link: LICENSE','license: cc-by-4.0'),
-             manifest_rights=rights(c_included=0))
-    assert len(m.upload_plan(hf))==len(ALL)
-    hf=build(tmp_path/'e',card=CARD.replace('license: other\nlicense_name: nilim-pdl1.0-and-co-publisher-notices\nlicense_link: LICENSE','license: cc-by-4.0'),
-             manifest_rights=rights(c_included=0,d_included=1))
-    with pytest.raises(m.PublishError,match='licen'): m.upload_plan(hf)
+def test_only_class_a_and_b_text_may_be_published_and_only_as_cc_by(tmp_path):
+    assert len(m.upload_plan(build(tmp_path/'ok')))==len(ALL)
+    # any class c or d report in the files stops the run, whatever the card says
+    for c,d in ((1,0),(0,1)):
+        hf=build(tmp_path/f'c{c}d{d}',manifest_rights=rights(c_included=c,d_included=d))
+        with pytest.raises(m.PublishError,match='class c/d'): m.upload_plan(hf)
+    # the licence must be cc-by-4.0
+    for lic in ('other','mit'):
+        hf=build(tmp_path/lic,card=CARD.replace('license: cc-by-4.0',f'license: {lic}'))
+        with pytest.raises(m.PublishError,match='licen'): m.upload_plan(hf)
 
 
-def test_card_must_name_every_excluded_report(tmp_path):
+def test_card_must_name_every_excluded_tnn_report(tmp_path):
     hf=build(tmp_path,card=CARD.replace('Excluded: 国総研資料 798.','Nothing excluded.'))
     with pytest.raises(m.PublishError,match='798'): m.upload_plan(hf)
+    # bulletins are listed in EXCLUDE.txt, not one by one in the card
+    hf=build(tmp_path/'b'); man=json.loads((hf/'MANIFEST.json').read_text())
+    man['excluded'].append(dict(url='https://www.nilim.go.jp/y.pdf',source_type='flash',report_id='flash-0123456789abcdef',pages=1))
+    (hf/'MANIFEST.json').write_text(json.dumps(man))
+    assert len(m.upload_plan(hf))==len(ALL)
 
 
 class FakeApi:
@@ -156,7 +154,10 @@ def test_real_card_matches_files_and_manifest_counts():
     assert f'{man["excluded_totals"]["pages"]:,}' in card and f'{man["excluded_totals"]["documents"]}' in card
     for side in ('included','excluded'):
         for c,v in man['rights'][side].items():
-            if v['pdfs']: assert f'{v["pdfs"]:,}' in card, (side,c)
+            if v['pdfs']: assert f'{v["pdfs"]:,}' in card and f'{v["pages"]:,}' in card, (side,c)
+    assert man['rights']['included']['c']['pdfs']==0 and man['rights']['included']['d']['pdfs']==0
+    for org in ('PWRI','BRI','PARI','MPAT'): assert org in card
+    assert 'RIGHTS_REVIEW.tsv' in card and 'EXCLUDE.txt' in card
     # the NILIM terms are quoted exactly as published (including the original's 「は、の著作権は」)
     quote='国土技術政策総合研究所ウェブサイト及び国土技術政策総合研究所のソーシャルメディアアカウントで掲載・発信している情報（以下「コンテンツ」といいます。）は、の著作権は、特記されていない限り国土技術政策総合研究所に帰属し、権利表記の記載がない限り「公共データ利用規約（第1.0版）」（PDL1.0）に準拠した利用条件の下で、利用することができます。'
     assert quote in lic and quote in card

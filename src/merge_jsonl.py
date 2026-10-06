@@ -245,15 +245,17 @@ def write_provenance(data,out,keep,drop,missing,manifest):
                     characters=manifest['totals']['characters'],empty_pages=manifest['totals']['empty_pages']),
         excluded=dict(list='EXCLUDE.txt',documents=manifest['excluded_totals']['documents'],pages=manifest['excluded_totals']['pages'],
                       reports=sorted({f'{x["source_type"]} {x["report_id"]}' for x in manifest['excluded']}),
-                      reason='see RIGHTS_REVIEW.tsv and the card; the excluded PDFs carry a notice that forbids reproduction without written permission'),
-        rights_review=dict(file='RIGHTS_REVIEW.tsv',classes=dict(a='no other rights notice found',b='figures/photos credited to others only',
+                      reason='decision of the dataset owner: only reports NILIM published alone with no other rights notice (rights classes a and b) are published; '
+                             'every PDF of a jointly published, co-authored or rights-reserved report (class c) or an unclear report (class d) is left out; '
+                             'one reason per report in EXCLUDE.txt, per PDF in RIGHTS_REVIEW.tsv'),
+        rights_review=dict(file='RIGHTS_REVIEW.tsv',published_classes=['a','b'],classes=dict(a='no other rights notice found',b='figures/photos credited to others only',
                            c='rights notice or reprint restriction for the whole report, or joint authorship with another organisation',d='unclear'),
                            summary=manifest['rights']),
         changes=['none to the text or to any field: every line is the per-PDF JSONL line copied byte for byte',
                  'the per-PDF JSONL files were concatenated into one file per source type, documents in catalog order, pages in PDF order',
-                 'the PDFs listed in EXCLUDE.txt were left out',
+                 'the PDFs listed in EXCLUDE.txt (every PDF of a class c or d report) were left out',
                  'the PDFs themselves are not included; source_url names the official PDF and source_pdf_sha256 identifies the copy that was read'],
-        licence='other (NILIM site terms: PDL1.0 for NILIM content unless a rights notice says otherwise; co-published reports also carry rights notices of other institutes); see LICENSE')
+        licence='CC BY 4.0: only NILIM\'s own works are included, and the NILIM site terms put NILIM content without another rights notice under PDL1.0, which is compatible with CC BY 4.0; see LICENSE')
     atomic_write(Path(out)/'provenance.yaml',yaml.safe_dump(doc,allow_unicode=True,sort_keys=False,width=1000))
 
 
