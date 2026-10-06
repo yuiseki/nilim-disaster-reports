@@ -46,23 +46,23 @@ Page-level text of disaster field-survey reports published by the National Insti
 and Infrastructure Management (NILIM, 国土交通省 国土技術政策総合研究所, 国総研), extracted from the
 text layer of the official PDFs. One JSON line is one PDF page.
 
-**What is in, and what is left out.** The dataset owner chose to publish only reports whose text
-NILIM published alone with no other rights notice: rights classes **a** (no other rights notice
-found) and **b** (NILIM's text, with figures or photos credited to others). Every report that was
+What is in, and what is left out. The dataset owner chose to publish only reports whose text
+NILIM published alone with no other rights notice: rights classes a (no other rights notice
+found) and b (NILIM's text, with figures or photos credited to others). Every report that was
 jointly published or co-authored with another organisation (the Public Works Research Institute
 PWRI, the Building Research Institute BRI, the Port and Airport Research Institute PARI, the
 National Institute of Maritime, Port and Aviation Technology MPAT, universities, academic societies,
 the MLIT Housing Bureau and others), every report with an all-rights-reserved notice, and every
-report whose rights could not be assessed (classes **c** and **d**) is left out.
+report whose rights could not be assessed (classes c and d) is left out.
 
 | | reports | PDFs | pages |
 |---|---|---|---|
-| **in**: class a | 14 | 23 | 313 |
-| **in**: class b | 12 | 42 | 570 |
-| **in**: total | 26 | 65 | 883 |
-| **out**: class c (joint publication, co-authorship or rights notice of another party) | 108 | 503 | 12,764 |
-| **out**: class d (unclear) | 10 | 61 | 478 |
-| **out**: total | 118 | 564 | 13,242 |
+| in: class a | 14 | 23 | 313 |
+| in: class b | 12 | 42 | 570 |
+| in: total | 26 | 65 | 883 |
+| out: class c (joint publication, co-authorship or rights notice of another party) | 108 | 503 | 12,764 |
+| out: class d (unclear) | 10 | 61 | 478 |
+| out: total | 118 | 564 | 13,242 |
 
 So this is a small part (65 of 629 collected PDFs) of NILIM's disaster survey output. The class
 of every PDF and the evidence for it are in `RIGHTS_REVIEW.tsv`; every left-out PDF is listed in
@@ -128,7 +128,7 @@ colophon of report 728 returned 404) and all 629 were reviewed; 65 are published
 | 233 | 平成15年（2003年）十勝沖地震被害に係わる現地調査報告書 | 21 | 167 | d | no text layer, authors and notices unreadable | out |
 | 248 | 平成16年（2004年）新潟県中越地震被害に係わる現地調査概要 | 38 | 214 | c | joint survey with PWRI and BRI | out |
 | 250 | 平成15年7月九州豪雨災害に関する調査報告会 | 18 | 141 | c | proceedings with PWRI and five universities | out |
-| 273 | 2004年の高潮・高波災害 | 10 | 102 | b | credits: 気象庁, 菜生海岸災害調査検討委員会 | **in** |
+| 273 | 2004年の高潮・高波災害 | 10 | 102 | b | credits: 気象庁, 菜生海岸災害調査検討委員会 | in |
 | 415 | 平成19年（2007年）能登半島地震建築物被害調査報告 | 14 | 170 | c | co-published with BRI | out |
 | 430 | 平成19年（2007年）新潟県中越沖地震建築物被害調査報告 | 13 | 210 | c | co-published with BRI | out |
 | 438 | 平成19年（2007年）能登半島地震被害調査報告 | 16 | 250 | c | co-published with PWRI and BRI | out |
@@ -137,25 +137,25 @@ colophon of report 728 returned 404) and all 629 were reviewed; 65 are published
 | 486 | 平成20年（2008年）岩手・宮城内陸地震被害調査報告 | 15 | 246 | c | co-published with PWRI and BRI | out |
 | 636 | 平成23年（2011年）東北地方太平洋沖地震調査研究（速報） | 22 | 577 | c | co-published with BRI | out |
 | 646 | 平成23年（2011年）東北地方太平洋沖地震 土木施設災害調査速報 | 17 | 497 | c | co-published with PWRI | out |
-| 658 | 2011年東北地方太平洋沖地震津波による海岸保全施設の被害調査 | 1 | 45 | b | credits: 電子国土, Google Earth | **in** |
+| 658 | 2011年東北地方太平洋沖地震津波による海岸保全施設の被害調査 | 1 | 45 | b | credits: 電子国土, Google Earth | in |
 | 680 | 平成23年（2011年）東北地方太平洋沖地震による仙台空港の舗装に関する被害報告 | 1 | 26 | c | co-authored by a PARI researcher | out |
 | 703 | 平成24年（2012年）5月6日に茨城県つくば市で発生した建築物等の竜巻被害調査報告 | 13 | 89 | c | co-published with BRI | out |
-| 726 | 平成23年(2011年)東北地方太平洋沖地震による強震記録 | 10 | 243 | a | - | **in** |
+| 726 | 平成23年(2011年)東北地方太平洋沖地震による強震記録 | 10 | 243 | a | - | in |
 | 728 | 平成23年（2011年）紀伊半島台風12号土砂災害調査報告 | 23 | 219 | c | co-published with PWRI | out |
-| 758 | 平成24年7月九州北部豪雨災害に関する調査 | 13 | 101 | b | credits: 九州地方整備局, 江口希之建築都市研究所 | **in** |
-| 781 | 2011年東北地方太平洋沖地震津波による海岸保全施設の被害調査（その2） | 1 | 56 | b | credits: 国土地理院, Google Earth, one photographer | **in** |
+| 758 | 平成24年7月九州北部豪雨災害に関する調査 | 13 | 101 | b | credits: 九州地方整備局, 江口希之建築都市研究所 | in |
+| 781 | 2011年東北地方太平洋沖地震津波による海岸保全施設の被害調査（その2） | 1 | 56 | b | credits: 国土地理院, Google Earth, one photographer | in |
 | 798 | 平成23年(2011年)東北地方太平洋沖地震による港湾施設等被害報告 | 43 | 3,156 | c | co-published with PARI; all rights reserved | out |
 | 814 | 平成23年（2011年）東北地方太平洋沖地震による道路橋等の被害調査報告 | 12 | 767 | c | co-published with PWRI | out |
 | 868 | 平成26年（2014年）北海道地方被災橋梁等調査報告 | 15 | 85 | c | co-published with PWRI; all rights reserved | out |
 | 875 | 平成25年（2013年）台風26号伊豆大島土砂災害調査報告 | 16 | 104 | c | co-published with PWRI; all rights reserved | out |
-| 936 | 平成25年山口・島根豪雨災害及び台風第18号災害に関する調査 | 10 | 96 | b | credits: 山口県, 萩市, 地理院地図 | **in** |
+| 936 | 平成25年山口・島根豪雨災害及び台風第18号災害に関する調査 | 10 | 96 | b | credits: 山口県, 萩市, 地理院地図 | in |
 | 967 | 平成28年（2016年）熊本地震土木施設被害調査報告 | 15 | 363 | c | co-published with PWRI | out |
 | 980 | 平成28年（2016年）12月22日に発生した新潟県糸魚川市における大規模火災に係る建物被害調査報告書 | 14 | 93 | c | co-published with BRI | out |
 | 1042 | 平成28年（2016年）熊本地震による港湾施設等被害報告 | 1 | 54 | c | co-published with MPAT; all rights reserved | out |
 | 1069 | 平成28年（2016年）台風10号等に伴う豪雨による北海道地方被災橋梁等調査報告 | 11 | 88 | c | co-published with PWRI | out |
 | 1111 | 令和元年（2019年）房総半島台風および東日本台風による土木施設・建築物等災害調査報告 | 15 | 417 | c | co-published with PWRI and BRI | out |
 | 1151 | 令和2年（2020年）7月豪雨 道路災害調査報告 | 15 | 164 | c | co-published with PWRI | out |
-| 1202 | 道路橋の洗掘による被災リスク要因に関する研究 －被災事例の統計分析等による検討及び令和3年(2021年)の豪雨災害調査－ | 1 | 138 | b | credits: 地理院地図, 地図・空中写真閲覧サービス | **in** |
+| 1202 | 道路橋の洗掘による被災リスク要因に関する研究 －被災事例の統計分析等による検討及び令和3年(2021年)の豪雨災害調査－ | 1 | 138 | b | credits: 地理院地図, 地図・空中写真閲覧サービス | in |
 | 1320 | 令和６年能登半島地震土木施設被害調査等報告 | 21 | 740 | c | co-published with PWRI | out |
 | 1356 | 令和６年能登半島地震建築物被害調査等報告 | 21 | 1,896 | c | co-published with BRI; university and company authors | out |
 
@@ -261,28 +261,28 @@ reserved`, 無断転載, 承認を得ずして), joint authorship or publication
 societies), credits (提供, 出典, 撮影, 転載, 引用, Google, ZENRIN) and Survey Act or GSI map notices
 (測量法, 承認番号, 国土地理院, 地理院地図, 電子国土). The covers, front matter, author lists and colophons
 of every report were read, and the hits were read in context. Each report was put in one class:
-**a** no other rights notice found; **b** figures or photos credited to others only; **c** a
+a no other rights notice found; b figures or photos credited to others only; c a
 rights notice or reprint restriction covering the whole report, or joint authorship or publication
-with another organisation; **d** unclear. `RIGHTS_REVIEW.tsv` has one row per PDF with the class,
+with another organisation; d unclear. `RIGHTS_REVIEW.tsv` has one row per PDF with the class,
 other parties, basis, a quoted line of evidence (file, page, text), counts of lines matching each
 signal, its first hit, and whether it is excluded.
 
 What it found in the left-out reports:
 
-- **Joint publications.** Most left-out 国総研資料 reports are also published in a co-publisher's
+- Joint publications. Most left-out 国総研資料 reports are also published in a co-publisher's
   series (土研資料 of PWRI, 建築研究資料 of BRI, 港湾空港技術研究所資料 of PARI or MPAT), and their
   colophons carry the co-publisher's mark, e.g. 1151 `ks1151_15.pdf` page 1
   「編集・発行 ©国土技術政策総合研究所 ©国立研究開発法人土木研究所」. Reports 248 and 250 are joint surveys
   or meeting proceedings with PWRI, BRI and universities.
-- **All rights reserved.** 798 (with PARI), 868 and 875 (with PWRI) and 1042 (with MPAT) state that
+- All rights reserved. 798 (with PARI), 868 and 875 (with PWRI) and 1042 (with MPAT) state that
   all rights are reserved and that no part may be reprinted or copied without written approval,
   e.g. 868 `ks086801.pdf` page 2: 「Copyright © (2015) by N.I.L.I.M. and P.W.R.I.」「All rights
   reserved.」「本報告書の全部又は一部の転載、複製は、…文書による承認を得ずしてこれを行ってはならない。」
-- **Co-authors and joint surveys.** Report 680 has a PARI researcher among its four authors
+- Co-authors and joint surveys. Report 680 has a PARI researcher among its four authors
   (`ks0680.pdf` page 2). 83 bulletins name BRI, PWRI, PARI, academic societies, universities or the
   MLIT Housing Bureau as authors or survey members next to NILIM, e.g. `R8/kumamototekkinkonkurito.pdf` page 1
   「国土交通省国土技術政策総合研究所 / 国立研究開発法人建築研究所」.
-- **Unclear.** Reports 115, 133 and 233 have no text layer; six 2016 Kumamoto bulletins have
+- Unclear. Reports 115, 133 and 233 have no text layer; six 2016 Kumamoto bulletins have
   unreadable text layers; `h21hyougo/h21hyougo1.pdf` page 4 contains an uncredited passage that
   reads like quoted press text.
 
