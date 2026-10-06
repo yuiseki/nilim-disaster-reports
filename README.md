@@ -36,3 +36,7 @@ https://www.nilim.go.jp/lab/ucg/research/02.html
 共通規約の適用範囲・共同著作・第三者素材は要調査。今回の追加収集もローカル保存のみ。
 再収集時は `src/catalog.py --repo <repo>`。固定目録の同日上書きは防ぐ。現在の目録で取得再開する場合は `sh start.sh`。
 30分監視は `/Workspaces/ops/data-download-monitor/`。停止・ブロック・進捗停止・完了を通知する。
+
+## JSONL化
+
+取得済み629 PDFをページ別JSONLへ変換する処理を追加。原本SHA256・出典・報告名・資料番号・章名を保持し、資料と速報を2本へ結合する。手順と保存先は [docs/JSONL.md](docs/JSONL.md)。
