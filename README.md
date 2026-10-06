@@ -40,3 +40,5 @@ https://www.nilim.go.jp/lab/ucg/research/02.html
 ## JSONL化
 
 取得済み629 PDFをページ別JSONLへ変換する処理を追加。原本SHA256・出典・報告名・資料番号・章名を保持し、資料と速報を2本へ結合する。手順と保存先は [docs/JSONL.md](docs/JSONL.md)。
+
+2026-10-07、629 PDFのJSONL化完了。14,125ページ・約44.6MiB、抽出エラー0件。結合済みJSONLは `data/jsonl/corpus/tnn.jsonl` と `data/jsonl/corpus/flash.jsonl`。
